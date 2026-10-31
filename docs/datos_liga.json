@@ -1,7 +1,7 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-10-31T15:17:35+00:00",
+  "actualizado": "2026-10-31T16:30:21+00:00",
   "ultimos_cambios": [
     "Clasificación actualizada"
   ],
@@ -2196,26 +2196,26 @@
   ],
   "clasificacion": [
     {
+      "equipo": "C.D. LEGANES S.A.D.",
+      "puntos": 12,
+      "posicion": 1,
+      "pj": 4,
+      "pg": 4,
+      "pe": 0,
+      "pp": 0,
+      "gf": 41,
+      "gc": 0
+    },
+    {
       "equipo": "C.D. GETAFE FEMENINO 'A'",
       "puntos": 10,
-      "posicion": 1,
+      "posicion": 2,
       "pj": 4,
       "pg": 3,
       "pe": 1,
       "pp": 0,
       "gf": 32,
       "gc": 2
-    },
-    {
-      "equipo": "C.D. LEGANES S.A.D.",
-      "puntos": 9,
-      "posicion": 2,
-      "pj": 3,
-      "pg": 3,
-      "pe": 0,
-      "pp": 0,
-      "gf": 37,
-      "gc": 0
     },
     {
       "equipo": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
@@ -2262,26 +2262,26 @@
       "gc": 7
     },
     {
-      "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
-      "puntos": 4,
+      "equipo": "CDB UNION DEPORTIVA ARGANZUELA",
+      "puntos": 6,
       "posicion": 7,
-      "pj": 3,
-      "pg": 1,
-      "pe": 1,
-      "pp": 1,
-      "gf": 10,
-      "gc": 3
+      "pj": 4,
+      "pg": 2,
+      "pe": 0,
+      "pp": 2,
+      "gf": 8,
+      "gc": 16
     },
     {
-      "equipo": "A.D. LA MECA DE RIVAS",
+      "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
       "puntos": 4,
       "posicion": 8,
       "pj": 3,
       "pg": 1,
       "pe": 1,
       "pp": 1,
-      "gf": 8,
-      "gc": 4
+      "gf": 10,
+      "gc": 3
     },
     {
       "equipo": "CLUB DE FUTBOL GETAFE FÉMINAS",
@@ -2295,26 +2295,26 @@
       "gc": 4
     },
     {
+      "equipo": "A.D. LA MECA DE RIVAS",
+      "puntos": 4,
+      "posicion": 10,
+      "pj": 4,
+      "pg": 1,
+      "pe": 1,
+      "pp": 2,
+      "gf": 8,
+      "gc": 8
+    },
+    {
       "equipo": "CDE ARANJUEZ CFF",
       "puntos": 3,
-      "posicion": 10,
+      "posicion": 11,
       "pj": 4,
       "pg": 1,
       "pe": 0,
       "pp": 3,
       "gf": 8,
       "gc": 15
-    },
-    {
-      "equipo": "CDB UNION DEPORTIVA ARGANZUELA",
-      "puntos": 3,
-      "posicion": 11,
-      "pj": 3,
-      "pg": 1,
-      "pe": 0,
-      "pp": 2,
-      "gf": 4,
-      "gc": 16
     },
     {
       "equipo": "C.D.A. NAVALCARNERO",
@@ -2342,12 +2342,12 @@
       "equipo": "A.D. PIQUEÑAS",
       "puntos": 0,
       "posicion": 14,
-      "pj": 3,
+      "pj": 4,
       "pg": 0,
       "pe": 0,
-      "pp": 3,
+      "pp": 4,
       "gf": 0,
-      "gc": 36
+      "gc": 40
     }
   ],
   "escudos": {
