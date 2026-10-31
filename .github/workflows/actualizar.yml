@@ -1,0 +1,42 @@
+name: Actualizar datos de la liga
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"      # cada 10 minutos (GitHub puede retrasarlo unos minutos)
+  workflow_dispatch:             # también se puede lanzar a mano: pestaña Actions > Run workflow
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-liga
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Leer la RFFM
+        env:
+          # Los nombres de las jugadoras (menores) se publican SIEMPRE cifrados con este código; solo tu iPhone los lee.
+          # Crea el secreto en: Settings > Secrets and variables > Actions > New repository secret > CLAVE_ACTAS
+          # Si no existe, las actas no se publican.
+          LIGA_CLAVE: ${{ secrets.CLAVE_ACTAS }}
+          LIGA_NO_ACTAS: ${{ secrets.CLAVE_ACTAS == '' && '1' || '' }}
+        run: |
+          python extractor.py --salida docs/datos_liga.json
+          # Si el lector de actas no reconoce el formato, se publica un esquema SIN nombres para poder ajustarlo.
+          if [ -f diagnostico/acta_esquema.txt ]; then cp diagnostico/acta_esquema.txt docs/acta_esquema.txt; else rm -f docs/acta_esquema.txt; fi
+      - name: Guardar cambios
+        run: |
+          git config user.name "actualizador-liga"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A docs
+          if git diff --cached --quiet; then echo "Sin cambios"; else git commit -m "Datos actualizados" && git push; fi
