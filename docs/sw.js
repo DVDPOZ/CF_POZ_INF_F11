@@ -9,7 +9,7 @@
  *
  * Requiere https o localhost. Si cambias el contenido de SHELL o EXTERNOS, sube VERSION.
  */
-const VERSION = 'v10';
+const VERSION = 'v16';
 const CACHE_APP = 'liga-app-' + VERSION;
 const CACHE_DATOS = 'liga-datos';                 // no depende de VERSION: conserva los últimos datos entre versiones
 const CACHE_EXTERNO = 'liga-externo-' + VERSION;

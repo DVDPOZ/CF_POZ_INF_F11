@@ -1135,6 +1135,151 @@ def asignar_actas(partidos, url_base, origen):
             p["acta"] = None
 
 
+# --------------------------------------------------------------------------
+# Resultados provisionales sacados del acta (la RFFM suele publicar el acta antes que el resultado en el calendario)
+# --------------------------------------------------------------------------
+MAX_ACTAS_PENDIENTES_POR_CICLO = 16
+DURACION_PARTIDO_MIN = 100          # no se mira el acta hasta que, por horario, el partido ya debería haber terminado
+DIAS_MAX_PENDIENTE = 10             # pasado este tiempo sin resultado oficial se deja de insistir
+RE_GOL_LOCAL = re.compile(r"(gol|result|marcador|anotad|score).*(local|casa|home)|(local|casa|home).*(gol|result|marcador|anotad|score)")
+RE_GOL_VISIT = re.compile(r"(gol|result|marcador|anotad|score).*(visit|fuera|away)|(visit|fuera|away).*(gol|result|marcador|anotad|score)")
+
+
+def _entero(v):
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, int):
+        return v if 0 <= v <= 60 else None
+    if isinstance(v, str) and re.fullmatch(r"\s*\d{1,2}\s*", v):
+        return int(v)
+    return None
+
+
+def _marcador_en_nodo(nodo, prof=0):
+    """Busca en el JSON pares de campos tipo golesLocal / golesVisitante (o resultadoLocal / resultadoVisitante)."""
+    if prof > 6:
+        return None
+    if isinstance(nodo, dict):
+        gl = gv = None
+        for k, v in nodo.items():
+            nk = _nk(k)
+            n = _entero(v)
+            if n is None or "equipo" in nk and not re.search(r"gol|result|marcador", nk):
+                continue
+            if RE_GOL_LOCAL.search(nk) and not RE_GOL_VISIT.search(nk):
+                gl = n if gl is None else gl
+            elif RE_GOL_VISIT.search(nk):
+                gv = n if gv is None else gv
+        if gl is not None and gv is not None:
+            return gl, gv
+        for v in nodo.values():
+            r = _marcador_en_nodo(v, prof + 1)
+            if r:
+                return r
+    elif isinstance(nodo, list):
+        for v in nodo[:60]:
+            r = _marcador_en_nodo(v, prof + 1)
+            if r:
+                return r
+    return None
+
+
+def marcador_desde_nd(nd, partido, url=""):
+    """(goles_local, goles_visitante) leídos del acta, o None si no se puede saber con seguridad.
+    1) campos explícitos de resultado; 2) si no los hay, recuento de goles del acta (solo si hay al menos un gol:
+    un 0-0 no se puede distinguir de un partido sin empezar)."""
+    try:
+        raiz = nd["props"]["pageProps"]
+    except (KeyError, TypeError):
+        return None
+    game = raiz.get("game") if isinstance(raiz.get("game"), (dict, list)) else raiz
+    m = _marcador_en_nodo(game)
+    if m:
+        return m
+    acta = acta_desde_next_data(nd, partido, url)
+    if acta and acta["goles"]:
+        gl = gv = 0
+        for g in acta["goles"]:
+            lado = g.get("lado")
+            if lado is None:
+                return None                   # no sabemos de quién es un gol: mejor no inventar
+            propia = g.get("tipo") == "propia puerta"
+            a_local = (lado == "local") != propia
+            gl += a_local
+            gv += not a_local
+        return gl, gv
+    return None
+
+
+def _inicio_partido(p):
+    try:
+        f = datetime.strptime(p["fecha"], "%Y-%m-%d")
+    except (KeyError, TypeError, ValueError):
+        return None
+    h = p.get("hora")
+    if h and re.fullmatch(r"\d{1,2}:\d{2}", h):
+        f = f.replace(hour=int(h.split(":")[0]), minute=int(h.split(":")[1]))
+        return f, True
+    return f + timedelta(days=1), False         # sin hora: se espera a que acabe el día
+
+
+def _ahora_madrid():
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Europe/Madrid")).replace(tzinfo=None)
+    except Exception:
+        return datetime.now()
+
+
+def completar_resultados_con_actas(partidos, url_base, origen, ahora=None):
+    """Para partidos que ya deberían haber terminado y aún no tienen resultado en el calendario, mira su acta.
+    Si el acta ya trae el marcador, se usa como resultado PROVISIONAL (resultado_fuente = "acta"); en cuanto el
+    calendario oficial lo publique, el resultado oficial lo sustituye. Un fallo aquí nunca detiene la actualización."""
+    ahora = ahora or _ahora_madrid()
+    n = 0
+    candidatos = []
+    for p in partidos:
+        if p.get("resultado_local") is not None or not p.get("cod_acta"):
+            continue
+        ini = _inicio_partido(p)
+        if not ini:
+            continue
+        inicio, con_hora = ini
+        fin = inicio + (timedelta(minutes=DURACION_PARTIDO_MIN) if con_hora else timedelta(0))
+        if ahora < fin or (ahora - fin).days > DIAS_MAX_PENDIENTE:
+            continue
+        candidatos.append(p)
+    for p in candidatos[:MAX_ACTAS_PENDIENTES_POR_CICLO]:
+        u = url_acta(origen, p["cod_acta"], url_base)
+        try:
+            nd = extraer_next_data(descargar(u, reintentos=2))
+            m = marcador_desde_nd(nd, p, u) if nd else None
+        except ErrorExtraccion as e:
+            log(f"  Resultado por acta J{p['jornada']} {p['equipo_local']} - {p['equipo_visitante']}: no se pudo leer ({str(e).splitlines()[0]})")
+            continue
+        except Exception as e:                     # nunca debe romper la actualización
+            log(f"  Resultado por acta: error inesperado ({type(e).__name__}: {e})")
+            continue
+        if not m and nd:
+            try:   # esquema SIN nombres de un acta sin marcador, para poder ajustar el lector con datos reales
+                f = CARPETA / "diagnostico" / "acta_pendiente_esquema.txt"
+                if not f.exists():
+                    f.parent.mkdir(parents=True, exist_ok=True)
+                    f.write_text(esquema_anonimo(nd["props"]["pageProps"]), encoding="utf-8")
+            except Exception:
+                pass
+        if m:
+            p["resultado_local"], p["resultado_visitante"] = m
+            p["resultado_fuente"] = "acta"
+            p["acta"] = u
+            n += 1
+            log(f"  Resultado provisional por acta J{p['jornada']} {p['equipo_local']} {m[0]}-{m[1]} {p['equipo_visitante']}")
+        time.sleep(PAUSA_ENTRE_ACTAS_S)
+    if n:
+        log(f"Resultados provisionales sacados de actas: {n}")
+    return n
+
+
 def _persona(d):
     nom = None
     for k in CLAVES_NOMBRE:
@@ -1427,7 +1572,7 @@ def descargar_actas(partidos, previas, hoy=None, max_nuevas=MAX_ACTAS_POR_CICLO)
 # --------------------------------------------------------------------------
 # Comparación y guardado
 # --------------------------------------------------------------------------
-CAMPOS_PARTIDO = ("fecha", "hora", "campo", "acta")
+CAMPOS_PARTIDO = ("fecha", "hora", "campo", "acta", "resultado_fuente")
 CAMPOS_CLASIFICACION = ("equipo", "posicion", "puntos", "pj", "pg", "pe", "pp", "gf", "gc")
 
 
@@ -1520,6 +1665,9 @@ def comparar_datos(previo, nuevo):
                 continue
             if campo == "acta":
                 cambios.append(f"{_etiqueta(n)}: acta {'disponible' if not vo else 'modificada'}")
+            elif campo == "resultado_fuente":
+                if vo == "acta" and not vn:
+                    cambios.append(f"{_etiqueta(n)}: resultado confirmado en el calendario de la RFFM")
             else:
                 cambios.append(f"{_etiqueta(n)}: {campo} {vo or '—'} → {vn or '—'}")
     for k, o in antes.items():
@@ -1605,6 +1753,10 @@ def comprobar_una_vez(url, salida=SALIDA_POR_DEFECTO, navegador=False, forzar=Fa
     html_cal = res.pop("_html_cal", None)
     res["escudos"], res["escudos_fuente"] = descargar_escudos(
         urls_escudos, salida.parent / "escudos", previo, "{0.scheme}://{0.netloc}".format(urlparse(url)), res.get("fuente"), html_cal)
+    try:
+        completar_resultados_con_actas(res["partidos"], url, "{0.scheme}://{0.netloc}".format(urlparse(url)))
+    except Exception as e:
+        log(f"Aviso: no se pudieron comprobar los resultados por acta ({type(e).__name__}: {e})")
     try:
         if os.environ.get("LIGA_NO_ACTAS"):   # publicación en internet sin nombres de jugadoras
             res["actas"] = {}

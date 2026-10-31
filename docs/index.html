@@ -8,6 +8,7 @@
 <!-- ===== PWA / iOS: "Añadir a pantalla de inicio" ===== -->
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1b4527">
+<script>try { if (localStorage.getItem('liga-tema') === 'oscuro') document.documentElement.classList.add('dark'); } catch (e) {}</script>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -112,24 +113,119 @@ if (window.tailwind) tailwind.config = { theme: { extend: {
   details.acta > summary.btn-acta { display:flex; width:max-content }
   .btn-acta:hover { background:#edc04f } .btn-acta:active { transform:translateY(1px) }
   details.acta[open] > summary .btn-acta-t::after { content:" ▴" } details.acta:not([open]) > summary .btn-acta-t::after { content:" ▾" }
+  .acciones { display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:.5rem }
+  .acciones details.acta[open] { flex-basis:100%; order:2 } .acciones details.acta > summary.btn-acta { margin:0 auto }
+  .btn-previa { display:inline-flex; align-items:center; justify-content:center; gap:.3rem; cursor:pointer; user-select:none; order:1;
+    padding:.15rem .6rem; border-radius:9999px; font-weight:800; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; line-height:1.4;
+    color:#1b4527; background:#fff; border:1px solid #2a6039; box-shadow:0 1px 2px rgba(0,0,0,.3) }
+  .btn-previa:hover { background:#eef5ef } .btn-previa:active { transform:translateY(1px) }
+  /* La previa (ventana con el análisis del cruce) */
+  #modalPrevia { position:fixed; inset:0; z-index:60; display:none; align-items:flex-end; justify-content:center; background:rgba(15,32,22,.6); }
+  #modalPrevia.abierto { display:flex }
+  #modalPrevia .hoja { background:#dee3e5; width:100%; max-width:40rem; max-height:94vh; overflow-y:auto; border-radius:1rem 1rem 0 0; box-shadow:0 -8px 30px rgba(0,0,0,.35); overscroll-behavior:contain }
+  @media (min-width:700px) { #modalPrevia { align-items:center } #modalPrevia .hoja { border-radius:1rem; max-height:90vh } }
+  .pv-cab { position:sticky; top:0; z-index:2; background:#1b4527; color:#fff; display:flex; align-items:center; gap:.5rem; padding:.7rem 1rem; }
+  .pv-bloque { background:#fff; border-radius:.75rem; overflow:hidden; box-shadow:0 1px 2px rgba(0,0,0,.12); margin:.75rem; }
+  .pv-tit { background:#1b4527; color:#fff; display:grid; grid-template-columns:3rem 1fr 3rem; align-items:center; text-align:center; padding:.4rem .75rem; font-weight:800; font-size:.8rem; letter-spacing:.06em; text-transform:uppercase }
+  .pv-tit b { font-size:1rem } .pv-tit b:first-child { text-align:left } .pv-tit b:last-child { text-align:right }
+  .pv-barra { display:flex; height:.6rem; border-radius:9999px; overflow:hidden; background:#e2e8f0; margin:.6rem .75rem .3rem }
+  .pv-fila { display:grid; grid-template-columns:3.5rem 1fr 3.5rem; text-align:center; font-size:.85rem; padding:.2rem .75rem; color:#334155 }
+  .pv-fila span:first-child { text-align:left; font-weight:700 } .pv-fila span:last-child { text-align:right; font-weight:700 } .pv-fila em { font-style:normal; color:#64748b; font-size:.75rem }
+  .pv-l { background:#2a6039 } .pv-v { background:#d4a017 }
+  .pv-pill { display:inline-block; border-radius:9999px; padding:.1rem .7rem; font-weight:800; font-size:.8rem; color:#fff }
   details.acta > summary { list-style:none } details.acta > summary::-webkit-details-marker { display:none }
+  /* Gráfico de evolución: colores que cambian con el tema */
+  :root { --evo-grid:#eef1f3; --evo-ax:#94a3b8; --evo-gris:#cbd5e1; --evo-lab:#64748b; }
+  /* Ajustes (engranaje) */
+  #btnAjustes { position:absolute; right:.75rem; top:calc(var(--sat) + .6rem); z-index:30; width:2.5rem; height:2.5rem; border-radius:9999px; display:flex; align-items:center; justify-content:center;
+    color:#fff; background:rgba(0,0,0,.22); border:1px solid rgba(255,255,255,.25) } #btnAjustes:hover { background:rgba(0,0,0,.35) }
+  #btnAjustes svg { width:1.4rem; height:1.4rem; transition:transform .3s } #btnAjustes[aria-expanded="true"] svg { transform:rotate(60deg) }
+  #panelAjustes { position:absolute; right:.75rem; top:calc(var(--sat) + 3.4rem); z-index:40; width:16rem; background:#fff; color:#1e293b; border-radius:.75rem; box-shadow:0 10px 30px rgba(0,0,0,.35); padding:.9rem; display:none }
+  #panelAjustes.abierto { display:block }
+  #modalDocs { display:none; position:fixed; inset:0; z-index:60; background:rgba(0,0,0,.55); align-items:center; justify-content:center; padding:1rem; }
+  #modalDocs.abierto { display:flex }
+  #modalDocs .caja { width:100%; max-width:24rem; background:#fff; color:#1e293b; border-radius:.9rem; padding:1rem; box-shadow:0 20px 50px rgba(0,0,0,.5); }
+  #modalDocs a.doc { display:block; margin-top:.6rem; padding:.7rem .8rem; border-radius:.6rem; border:1px solid #cbd5e1; font-weight:700; font-size:.85rem; color:#14532d; text-decoration:none; }
+  #modalDocs a.doc span { display:block; font-weight:400; font-size:.7rem; color:#64748b; margin-top:.1rem; }
+  html.dark #modalDocs .caja { background:#15221a; color:#e3ece6; border:1px solid #2c4034; }
+  html.dark #modalDocs a.doc { border-color:#2c4034; color:#9be0b0; }
+  html.dark #modalDocs a.doc span { color:#9db2a4; }
+  .interruptor { position:relative; width:2.9rem; height:1.65rem; border-radius:9999px; background:#cbd5e1; flex:none; transition:background .2s; border:0; cursor:pointer }
+  .interruptor::after { content:''; position:absolute; top:.17rem; left:.17rem; width:1.31rem; height:1.31rem; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.4); transition:transform .2s }
+  .interruptor[aria-checked="true"] { background:#3f9a5a } .interruptor[aria-checked="true"]::after { transform:translateX(1.25rem) }
+
+  /* ===================== MODO OSCURO ===================== */
+  html.dark { color-scheme: dark; --evo-grid:#22332a; --evo-ax:#6f8277; --evo-gris:#3a4f43; --evo-lab:#a3b4a9; }
+  html.dark body { background:#0d1711; color:#e3ece6; }
+  html.dark .text-slate-800, html.dark .text-slate-700, html.dark .text-slate-900 { color:#e3ece6; }
+  html.dark .text-slate-600 { color:#b9c8be; } html.dark .text-slate-500 { color:#9fb1a5; } html.dark .text-slate-400 { color:#7f9286; }
+  html.dark .bg-white { background:#15221a; } html.dark .bg-slate-50 { background:#192a20; } html.dark .bg-slate-200 { background:#27392e; }
+  html.dark .bg-slate-800 { background:#0a120d; }
+  html.dark .border-slate-100 { border-color:#22332a; } html.dark .border-slate-200 { border-color:#263a2e; } html.dark .border-slate-300 { border-color:#3a4f43; }
+  html.dark .bg-pz-50 { background:#1c3a27; } html.dark .text-pz-800 { color:#a6e6b6; } html.dark .text-pz-700 { color:#86d99b; } html.dark .text-pz-600 { color:#6fcf88; }
+  html.dark .bg-pz-500 { background:#2c6a3f; }
+  html.dark .text-red-600, html.dark .text-red-700 { color:#f87171; }
+  html.dark .bg-amber-50 { background:#33290e; } html.dark .bg-amber-100 { background:#463816; }
+  html.dark .text-amber-800, html.dark .text-amber-900 { color:#fcd34d; } html.dark .border-amber-300, html.dark .border-amber-200 { border-color:#6b5416; }
+  html.dark select, html.dark input { background:#15221a; color:#e3ece6; border-color:#3a4f43; }
+  html.dark .hover\:bg-pz-50:hover { background:#1c3a27; }
+  html.dark thead.bg-pz-800 { background:#1b4527; }
+  html.dark .card-mio { background:#1d3a28 !important; border-color:#3f9a5a !important; color:#e4f2e8; box-shadow:0 1px 4px rgba(0,0,0,.5) !important; }
+  html.dark .card-mio .text-slate-400, html.dark .card-mio .text-slate-500 { color:#b4d7be !important; }
+  html.dark .card-mio a { color:#bfe8cb !important; }
+  html.dark .card-mio .text-pz-700 { color:#8fe0a5; }
+  html.dark .badge-fin { background:#1b4527; border:1px solid #3f9a5a; }
+  html.dark .btn-previa { background:#15221a; color:#a6e6b6; border-color:#3f9a5a; } html.dark .btn-previa:hover { background:#1c3a27; }
+  html.dark .btn-acta { box-shadow:0 1px 2px rgba(0,0,0,.6); }
+  html.dark .escudo-eq { filter:drop-shadow(0 0 1px rgba(255,255,255,.55)) drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
+  html.dark .balon, html.dark .camiseta { filter:drop-shadow(0 0 1px rgba(255,255,255,.35)); }
+  html.dark .mov-sube { color:#4ade80; } html.dark .mov-baja { color:#f87171; } html.dark .mov-igual, html.dark .mov-nd { color:#7f9286; }
+  html.dark #modalPrevia { background:rgba(0,0,0,.72); }
+  html.dark #modalPrevia .hoja { background:#0d1711; box-shadow:0 -8px 30px rgba(0,0,0,.7); }
+  html.dark .pv-bloque { background:#15221a; box-shadow:0 1px 3px rgba(0,0,0,.5); }
+  html.dark .pv-barra { background:#27392e; } html.dark .pv-fila { color:#d3dfd7; } html.dark .pv-fila em { color:#9fb1a5; }
+  html.dark .pv-l { background:#3f9a5a; } html.dark .pv-v { background:#e3b23c; }
+  html.dark #panelAjustes { background:#15221a; color:#e3ece6; box-shadow:0 10px 30px rgba(0,0,0,.7); border:1px solid #2c4034; }
+  html.dark .interruptor { background:#3a4f43; } html.dark .interruptor[aria-checked="true"] { background:#3f9a5a; }
+  html.dark #btnAjustes { background:rgba(0,0,0,.35); }
 </style>
 </head>
 <body class="text-slate-800 min-h-screen">
 
 <!-- CABECERA: escudo, nombre, lema y navegación -->
 <header class="relative">
+  <button type="button" id="btnAjustes" aria-label="Ajustes" aria-haspopup="true" aria-expanded="false" aria-controls="panelAjustes" title="Ajustes">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+  </button>
+  <div id="panelAjustes" role="dialog" aria-label="Ajustes">
+    <div class="font-extrabold uppercase tracking-wide text-sm mb-3">Ajustes</div>
+    <div class="flex items-center justify-between gap-3">
+      <label for="swOscuro" class="text-sm font-semibold">Modo oscuro<span class="block text-xs font-normal text-slate-500">Para ver la app con poca luz</span></label>
+      <button type="button" id="swOscuro" class="interruptor" role="switch" aria-checked="false"></button>
+    </div>
+    <div class="mt-3 pt-3 border-t border-slate-200">
+      <button type="button" id="btnDocs" class="w-full text-left text-sm font-semibold">📄 Documentación<span class="block text-xs font-normal text-slate-500">Reglamentos de la RFFM</span></button>
+    </div>
+  </div>
+  <div id="modalDocs" role="dialog" aria-modal="true" aria-label="Documentación">
+    <div class="caja">
+      <div class="flex items-center justify-between"><div class="font-extrabold uppercase tracking-wide text-sm">Documentación</div>
+        <button type="button" id="cerrarDocs" aria-label="Cerrar" class="text-xl leading-none px-2">✕</button></div>
+      <a class="doc" target="_blank" rel="noopener" href="https://rffm-cms.s3.eu-west-1.amazonaws.com/RGRFFM_V2_2026_mayo_junio_5f84246c52.pdf">REGLAMENTO GENERAL RFFM 06/2026<span>Abrir PDF</span></a>
+      <a class="doc" target="_blank" rel="noopener" href="https://rffm-cms.s3.eu-west-1.amazonaws.com/RD_V6_Junio_2026_eab96d09e4.pdf">REGLAMENTO DISCIPLINARIO RFFM 06/2026<span>Abrir PDF</span></a>
+    </div>
+  </div>
   <div class="bg-pz-800">
     <div class="relative max-w-5xl mx-auto px-4 pt-3 pb-5 pl-[6.25rem] md:pl-[10.5rem] flex flex-wrap items-center gap-x-8 gap-y-1 min-h-[4.5rem] md:min-h-[6.5rem]">
       <h1 class="font-marca text-white text-3xl md:text-5xl leading-none tracking-tight"><span class="font-light">CF</span> <span class="font-extrabold">POZUELO</span></h1>
       <img src="data:image/png;base64,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" alt="Pasión, garra y futuro." class="h-[26px] md:h-[46px] w-auto select-none" draggable="false">
-      <div class="js-vivo hidden lg:flex absolute right-4 top-3 max-w-[19rem] items-center gap-2 rounded-2xl bg-black/25 px-3 py-1 text-xs font-semibold leading-tight text-white" role="status" aria-live="polite"></div>
+      <div class="js-vivo hidden lg:flex absolute right-16 top-3 max-w-[19rem] items-center gap-2 rounded-2xl bg-black/25 px-3 py-1 text-xs font-semibold leading-tight text-white" role="status" aria-live="polite"></div>
     </div>
   </div>
   <div class="bg-pz-500">
     <nav class="max-w-5xl mx-auto px-4 pl-[6.25rem] md:pl-[10.5rem] flex gap-5 md:gap-10 overflow-x-auto">
       <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="calendario">Calendario</button>
-      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="clasificacion">Clasificación actual</button>
+      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="clasificacion">Clasificación</button>
       <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="predicciones">Predicciones</button>
       <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="jugadoras">Jugadoras</button>
     </nav>
@@ -151,11 +247,11 @@ if (window.tailwind) tailwind.config = { theme: { extend: {
     <div class="flex items-center gap-2">
       <select id="miEquipo" class="text-sm text-slate-800 border border-slate-300 rounded px-2 py-1 max-w-[11rem]" title="Resaltar mi equipo"></select>
       <button id="btnRecargar" class="text-sm bg-pz-800 hover:bg-pz-700 text-white rounded px-3 py-1" title="Volver a leer los datos">Recargar</button>
-      <button id="btnArchivo" class="text-sm bg-white border border-pz-800 text-pz-800 hover:bg-pz-50 rounded px-3 py-1" title="Abrir un datos_liga.json manualmente">Abrir archivo</button>
-      <input id="inputArchivo" type="file" accept=".json,application/json" class="hidden">
     </div>
   </div>
 </div>
+
+<div id="modalPrevia" role="dialog" aria-modal="true" aria-labelledby="pvTitulo" aria-hidden="true"><div class="hoja" id="pvHoja"></div></div>
 
 <div id="aviso" class="hidden max-w-5xl mx-auto mt-4 mx-4 px-4">
   <div class="rounded-lg border border-amber-300 bg-amber-50 text-amber-900 p-4 text-sm">
@@ -189,8 +285,10 @@ if (window.tailwind) tailwind.config = { theme: { extend: {
   <!-- 2. CLASIFICACIÓN -->
   <section id="view-clasificacion" class="hidden">
     <div class="flex flex-wrap items-baseline gap-3 mb-3">
-      <h2 class="text-lg font-semibold">Clasificación actual</h2>
+      <h2 id="tituloClasif" class="text-lg font-semibold">Clasificación</h2>
       <span id="origenClasificacion" class="text-xs rounded-full px-2 py-0.5 bg-slate-200 text-slate-700"></span>
+      <label class="ml-auto flex items-center gap-2 text-sm text-slate-600">Ver
+        <select id="selJornadaClasif" class="border border-slate-300 rounded px-2 py-1 bg-white text-slate-800" aria-label="Ver la clasificación de una jornada"></select></label>
     </div>
     <div class="overflow-x-auto bg-white rounded-lg shadow">
       <table class="min-w-full text-sm">
@@ -221,6 +319,14 @@ if (window.tailwind) tailwind.config = { theme: { extend: {
       <span class="inline-flex items-center gap-1"><svg class="balon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="3 3"/></svg>Sin jugar</span>
     </p>
     <p id="leyendaMov" class="mt-1 text-xs text-slate-600"></p>
+
+    <div class="mt-8">
+      <div class="flex flex-wrap items-baseline gap-x-3 mb-1"><h3 class="font-semibold">Evolución de la clasificación</h3>
+        <button id="btnLimpiarEvo" type="button" class="text-xs text-pz-700 underline hidden">Quitar resaltados</button></div>
+      <p class="text-xs text-slate-500 mb-2">Puesto de cada equipo tras cada jornada. Toca un equipo para resaltarlo (puedes resaltar varios).</p>
+      <div id="evoWrap" class="overflow-x-auto bg-white rounded-lg shadow p-2"></div>
+      <p id="evoNota" class="mt-1 text-[11px] text-slate-400"></p>
+    </div>
   </section>
 
   <!-- 4. JUGADORAS -->
@@ -303,6 +409,35 @@ if (window.tailwind) tailwind.config = { theme: { extend: {
       <select id="pJornada" class="rounded border border-slate-300 bg-white px-2 py-1 text-sm"></select>
     </div>
     <div id="prediccionLista" class="grid gap-3 sm:grid-cols-2"></div>
+
+    <h3 class="font-semibold mt-10 mb-1">4. Predicción ajustada a los resultados</h3>
+    <p id="notaAjuste" class="text-sm text-slate-600 mb-3"></p>
+    <div id="ajusteResumen" class="grid gap-3 sm:grid-cols-3 mb-3"></div>
+    <details id="ajusteDetalle" class="mb-5 bg-white rounded-lg shadow p-4">
+      <summary class="cursor-pointer font-semibold text-sm">Qué habría predicho cada modelo en los partidos ya jugados</summary>
+      <div class="overflow-x-auto mt-2"><table class="min-w-full text-sm">
+        <thead class="text-xs uppercase text-slate-500"><tr>
+          <th class="px-2 py-1 text-left">J</th><th class="px-2 py-1 text-left">Partido</th><th class="px-2 py-1 text-center">Real</th>
+          <th class="px-2 py-1 text-center">Base</th><th class="px-2 py-1 text-center">Ajustada</th></tr></thead>
+        <tbody id="tablaRetro"></tbody></table></div>
+      <p class="text-[11px] text-slate-500 mt-2">✓ = acierta quién gana o si hay empate. Cada partido se predice solo con lo que se sabía antes de jugarse.</p>
+    </details>
+    <h4 class="font-semibold text-sm mb-2">Clasificación estimada a final de temporada (ajustada)</h4>
+    <div class="overflow-x-auto bg-white rounded-lg shadow mb-8">
+      <table class="min-w-full text-sm">
+        <thead class="bg-pz-800 text-white text-xs uppercase">
+          <tr>
+            <th class="px-3 py-2 text-left">Pos</th><th class="px-3 py-2 text-left">Equipo</th>
+            <th class="px-3 py-2 text-center">Pts</th><th class="px-3 py-2 text-center">PJ</th>
+            <th class="px-3 py-2 text-center">PG</th><th class="px-3 py-2 text-center">PE</th>
+            <th class="px-3 py-2 text-center">PP</th><th class="px-3 py-2 text-center">GF</th>
+            <th class="px-3 py-2 text-center">GC</th><th class="px-3 py-2 text-center">DG</th>
+            <th class="px-3 py-2 text-center" title="Puesto en la estimación del modelo base (punto 2)">Base</th>
+          </tr>
+        </thead>
+        <tbody id="tablaAjustada"></tbody>
+      </table>
+    </div>
   </section>
 
 </main>
@@ -323,7 +458,7 @@ const LS_EQUIPO = 'liga_mi_equipo_v1';
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-let estado = { temporada: '', categoria: '', actualizado: '', ultimosCambios: [], partidos: [], equipos: [], clasificacionOficial: null, origenClasificacion: '', miEquipo: '', escudos: {}, actas: {}, actasCifradas: null, actasEstado: 'ok' };
+let estado = { temporada: '', categoria: '', actualizado: '', ultimosCambios: [], partidos: [], equipos: [], clasificacionOficial: null, origenClasificacion: '', miEquipo: '', escudos: {}, actas: {}, actasCifradas: null, actasEstado: 'ok', jornadaClasif: 'actual' };
 
 /* Actas cifradas (versión publicada en internet): AES-GCM, clave derivada del código de acceso con PBKDF2.
    El código se teclea una vez en el iPhone y se guarda en el propio dispositivo. */
@@ -371,7 +506,8 @@ function cargarDatos(entrada) {
         local: String(p.equipo_local).trim(), visitante: String(p.equipo_visitante).trim(),
         gl: ok ? gl : null, gv: ok ? gv : null, campo: p.campo || null,
         acta: (typeof p.acta === 'string' && /^https?:\/\//.test(p.acta)) ? p.acta : null,
-        cod: p.cod_acta ? String(p.cod_acta) : null
+        cod: p.cod_acta ? String(p.cod_acta) : null,
+        prov: ok && p.resultado_fuente === 'acta'
       };
     });
     partidos.sort((a, b) => a.jornada - b.jornada);
@@ -431,8 +567,7 @@ async function recargar({ siCambia = false } = {}) {
       enArchivo
         ? 'El navegador no permite leer datos_liga.json cuando index.html se abre directamente desde el disco.'
         : 'No se pudo leer ' + URL_DATOS + ' (' + e.message + ').',
-      'Solución: ejecuta  python servidor.py  (actualiza los datos en directo y abre esta página), ' +
-      'o pulsa «Abrir archivo» y elige datos_liga.json.');
+      'Solución: ejecuta  python servidor.py  (actualiza los datos en directo y abre esta página).');
     return { ok: false, error: e.message };
   }
 }
@@ -479,7 +614,8 @@ function calcularClasificacion(partidos = estado.partidos) {
 /* Usa la clasificación oficial del archivo si es coherente con el calendario; si no, la calcula. */
 function clasificacionActual() {
   const of = estado.clasificacionOficial;
-  if (of && of.length === estado.equipos.length && of.every(f => estado.equipos.includes(f.equipo))) {
+  const hayProv = estado.partidos.some(p => p.prov);   // con resultados provisionales la oficial va por detrás: se calcula
+  if (!hayProv && of && of.length === estado.equipos.length && of.every(f => estado.equipos.includes(f.equipo))) {
     const filas = of.map(f => ({ ...f }));
     if (filas.every(f => f.posicion != null)) filas.sort((a, b) => a.posicion - b.posicion); else ordenar(filas);
     return { filas, origen: estado.origenClasificacion === 'oficial' ? 'oficial' : 'calculada' };
@@ -497,22 +633,23 @@ function clasificacionActual() {
 const PESO_PRIOR = 2;               // "partidos virtuales" a media de liga: suaviza muestras pequeñas
 const MEDIA_GOLES_POR_DEFECTO = 1.5; // solo si aún no se ha jugado ningún partido
 
-function calcularFuerzas(partidos) {
+function calcularFuerzas(partidos, peso = null) {   // peso(p): importancia de cada partido jugado (1 = todos por igual)
   const jugados = partidos.filter(jugado);
   const nombres = [...new Set(partidos.flatMap(p => [p.local, p.visitante]))];
   const acum = new Map(nombres.map(e => [e, { casa: { pj: 0, gf: 0, gc: 0 }, fuera: { pj: 0, gf: 0, gc: 0 } }]));
-  let golesL = 0, golesV = 0;
+  let golesL = 0, golesV = 0, sw = 0;
   for (const p of jugados) {
+    const w = peso ? peso(p) : 1;
     const l = acum.get(p.local).casa, v = acum.get(p.visitante).fuera;
-    l.pj++; l.gf += p.gl; l.gc += p.gv;
-    v.pj++; v.gf += p.gv; v.gc += p.gl;
-    golesL += p.gl; golesV += p.gv;
+    l.pj += w; l.gf += w * p.gl; l.gc += w * p.gv;
+    v.pj += w; v.gf += w * p.gv; v.gc += w * p.gl;
+    golesL += w * p.gl; golesV += w * p.gv; sw += w;
   }
   const n = jugados.length;
   const liga = {
     partidos: n,
-    golesLocal: Math.max(n ? golesL / n : MEDIA_GOLES_POR_DEFECTO, 0.1),     // goles medios del equipo local
-    golesVisitante: Math.max(n ? golesV / n : MEDIA_GOLES_POR_DEFECTO, 0.1)  // goles medios del equipo visitante
+    golesLocal: Math.max(sw ? golesL / sw : MEDIA_GOLES_POR_DEFECTO, 0.1),     // goles medios del equipo local
+    golesVisitante: Math.max(sw ? golesV / sw : MEDIA_GOLES_POR_DEFECTO, 0.1)  // goles medios del equipo visitante
   };
   // media suavizada hacia la media de la liga; sin partidos -> exactamente la media de la liga (ratio 1)
   const ratio = (suma, pj, mediaLiga) => ((suma + PESO_PRIOR * mediaLiga) / (pj + PESO_PRIOR)) / mediaLiga;
@@ -554,6 +691,53 @@ function generarTablaFinalEstimada(clasificacionActual, simulados) {
     else              { l.pe++; v.pe++; l.pts++; v.pts++; l.ptsSim++; v.ptsSim++; }
   }
   return ordenar([...m.values()]);
+}
+
+/* ---------- Predicción ajustada a los resultados ----------
+   Misma idea que el modelo base, con dos correcciones que se recalculan solas con cada resultado nuevo:
+   1) los partidos recientes pesan más (cada 3 jornadas el peso se reduce a la mitad);
+   2) un factor de corrección de goles (local y visitante) que sale de comparar lo que el modelo esperaba con lo que pasó de verdad.
+   La retroprueba predice cada partido ya jugado usando solo lo que se sabía antes de él. */
+const VIDA_MEDIA_J = 3;
+const pesoReciente = (ref) => (p) => Math.pow(0.5, Math.max(0, ref - p.jornada) / VIDA_MEDIA_J);
+const signo1X2 = (gl, gv) => gl > gv ? 'L' : gl < gv ? 'V' : 'E';
+function factorAjuste(act, prd, n) {   // con pocos partidos medidos el factor se queda cerca de 1; se afianza al haber más
+  const f = (a, p) => Math.min(1.25, Math.max(0.8, 1 + ((a + 1) / (p + 1) - 1) * n / (n + 12)));
+  return { l: f(act[0], prd[0]), v: f(act[1], prd[1]) };
+}
+function predecirAjustado(p, fuerzas, k) {
+  const b = predecirPartido(p, fuerzas), el = b.esperadoLocal * k.l, ev = b.esperadoVisit * k.v;
+  return { gl: golesMasProbables(el), gv: golesMasProbables(ev), esperadoLocal: el, esperadoVisit: ev };
+}
+function retroprueba() {
+  const js = jornadasJugadas(), filas = [], act = [0, 0], prd = [0, 0];
+  for (const J of js) {
+    const ant = js.filter(x => x < J); if (!ant.length) continue;     // sin nada anterior no se puede predecir
+    const prev = estado.partidos.map(q => (jugado(q) && q.jornada < J) ? q : { ...q, gl: null, gv: null });
+    const fb = calcularFuerzas(prev), fa = calcularFuerzas(prev, pesoReciente(Math.max(...ant))), k = factorAjuste(act, prd, filas.length);
+    const lote = estado.partidos.filter(q => jugado(q) && q.jornada === J).map(q => ({ q, b: predecirPartido(q, fb), a: predecirAjustado(q, fa, k) }));
+    for (const f of lote) { filas.push(f); act[0] += f.q.gl; act[1] += f.q.gv; prd[0] += f.b.esperadoLocal; prd[1] += f.b.esperadoVisit; }
+  }
+  return { filas, k: factorAjuste(act, prd, filas.length) };
+}
+function resumenRetro(filas) {
+  const medir = (sel) => {
+    let h = 0, ex = 0, err = 0;
+    for (const f of filas) {
+      const r = sel(f), pb = probabilidades1X2(r.esperadoLocal, r.esperadoVisit);
+      const pred = pb.l >= pb.e && pb.l >= pb.v ? 'L' : pb.v >= pb.e ? 'V' : 'E';
+      if (pred === signo1X2(f.q.gl, f.q.gv)) h++;
+      if (r.gl === f.q.gl && r.gv === f.q.gv) ex++;
+      err += (Math.abs(r.esperadoLocal - f.q.gl) + Math.abs(r.esperadoVisit - f.q.gv)) / 2;
+    }
+    return { h, ex, mae: err / filas.length, n: filas.length };
+  };
+  return { base: medir(f => f.b), aj: medir(f => f.a) };
+}
+function calcularAjustada() {
+  const js = jornadasJugadas(), ref = js.length ? js[js.length - 1] : 0;
+  const fa = calcularFuerzas(estado.partidos, pesoReciente(ref)), rp = retroprueba();
+  return { fa, rp, sim: estado.partidos.filter(p => !jugado(p)).map(p => ({ partido: p, ...predecirAjustado(p, fa, rp.k) })) };
 }
 
 function calcularPrediccion() {
@@ -601,10 +785,51 @@ function escudoUrl(n) {
   if (u) return u;
   return /pozuelo/i.test(n) ? 'logo.png' : null;   // el escudo del club de la app ya está en local
 }
+/* Quita el recuadro blanco que traen muchos escudos: el blanco conectado con el borde de la imagen pasa a transparente
+   (el blanco de dentro del escudo se conserva). Se hace en el propio navegador, sobre cada escudo ya descargado. */
+const cacheEscudos = new Map();          // url original -> imagen sin fondo (data URL)
+function limpiarEscudo(img) {
+  if (!img || img.dataset.limpio) return;
+  img.dataset.limpio = '1';
+  const orig = img.dataset.orig || img.getAttribute('src');
+  try {
+    const w = img.naturalWidth, h = img.naturalHeight;
+    if (!w || !h || w > 1024 || h > 1024) return;
+    const c = document.createElement('canvas'); c.width = w; c.height = h;
+    const g = c.getContext('2d', { willReadFrequently: true }); g.drawImage(img, 0, 0);
+    const im = g.getImageData(0, 0, w, h), d = im.data;
+    const claro = (i) => d[i + 3] < 16 || (d[i] >= 236 && d[i + 1] >= 236 && d[i + 2] >= 236);   // transparente o casi blanco
+    const marca = new Uint8Array(w * h), cola = [];
+    const sembrar = (x, y) => { const k = y * w + x; if (!marca[k] && claro(k * 4)) { marca[k] = 1; cola.push(k); } };
+    for (let x = 0; x < w; x++) if (d[x * 4 + 3] < 16 || d[((h - 1) * w + x) * 4 + 3] < 16) return;   // ya trae transparencia: no se toca
+    for (let y = 0; y < h; y++) if (d[y * w * 4 + 3] < 16 || d[(y * w + w - 1) * 4 + 3] < 16) return;
+    for (let x = 0; x < w; x++) { sembrar(x, 0); sembrar(x, h - 1); }
+    for (let y = 0; y < h; y++) { sembrar(0, y); sembrar(w - 1, y); }
+    if (!cola.length) return;                          // el escudo ya llega sin recuadro
+    while (cola.length) {
+      const k = cola.pop(), x = k % w, y = (k / w) | 0;
+      if (x > 0) sembrar(x - 1, y); if (x < w - 1) sembrar(x + 1, y);
+      if (y > 0) sembrar(x, y - 1); if (y < h - 1) sembrar(x, y + 1);
+    }
+    for (let k = 0; k < marca.length; k++) if (marca[k]) d[k * 4 + 3] = 0;
+    // un píxel de borde suavizado: casi blanco y pegado al fondo quitado -> se hace semitransparente
+    for (let y = 1; y < h - 1; y++) for (let x = 1; x < w - 1; x++) {
+      const k = y * w + x, i = k * 4;
+      if (marca[k] || d[i + 3] === 0) continue;
+      if ((marca[k - 1] || marca[k + 1] || marca[k - w] || marca[k + w]) && d[i] > 200 && d[i + 1] > 200 && d[i + 2] > 200)
+        d[i + 3] = Math.round(d[i + 3] * Math.max(0, (255 - Math.min(d[i], d[i + 1], d[i + 2])) / 55));
+    }
+    g.putImageData(im, 0, 0);
+    const url = c.toDataURL('image/png');
+    cacheEscudos.set(orig, url);
+    img.dataset.orig = orig; img.src = url;
+  } catch (e) { /* p. ej. abierto desde el disco: el navegador no deja leer la imagen; se queda como está */ }
+}
+
 function escudoEq(n) {
   const u = escudoUrl(n), ini = inicialesEquipo(n);
   return `<span class="escudo-eq">${u
-    ? `<img src="${esc(u)}" alt="Escudo ${esc(n)}" data-ini="${esc(ini)}" loading="lazy" decoding="async" onerror="falloEscudo(this)">`
+    ? `<img src="${esc(cacheEscudos.get(u) || u)}" data-orig="${esc(u)}" ${cacheEscudos.has(u) ? 'data-limpio="1" ' : ''}alt="Escudo ${esc(n)}" data-ini="${esc(ini)}" loading="lazy" decoding="async" onload="limpiarEscudo(this)" onerror="falloEscudo(this)">`
     : `<span class="escudo-ini" aria-hidden="true">${esc(ini)}</span>`}</span>`;
 }
 function falloEscudo(img) {   // la imagen no carga: se muestra el escudo genérico con las iniciales
@@ -666,7 +891,7 @@ function tarjetaPartido(p) {
   const centro = vivo
     ? `<div class="text-center self-center"><div class="text-xl font-bold tabular-nums">${marcador}</div><div class="badge badge-vivo">En juego</div></div>`
     : jugado(p)
-    ? `<div class="text-center self-center"><div class="text-xl font-bold tabular-nums">${marcador}</div><div class="badge badge-fin">✓ Finalizado</div></div>`
+    ? `<div class="text-center self-center"><div class="text-xl font-bold tabular-nums">${marcador}</div><div class="badge badge-fin">✓ Finalizado</div>${p.prov ? '<div class="text-[10px] leading-tight text-slate-500 mt-0.5">provisional · según acta</div>' : ''}</div>`
     : `<div class="text-center self-center"><div class="text-sm font-semibold">${esc(fmtFecha(p.fecha))}</div><div class="text-xs text-slate-500">${p.hora ? esc(p.hora) : 'Hora por confirmar'}</div></div>`;
   return `
   <div class="rounded-lg shadow-sm border p-3 ${mio ? 'card-mio' : 'bg-white border-slate-200'} ${vivo ? 'card-vivo' : ''}">
@@ -677,9 +902,142 @@ function tarjetaPartido(p) {
     </div>
     ${jugado(p) && p.fecha ? `<div class="mt-1 text-[11px] text-slate-400 text-center">${esc(fmtFecha(p.fecha))}</div>` : ''}
     ${p.campo ? `<div class="mt-2 text-xs text-slate-500 text-center">📍 ${esc(p.campo)}</div>` : ''}
-    ${panelActa(p)}
+    <div class="acciones mt-2">${botonPrevia(p)}${panelActa(p)}</div>
   </div>`;
 }
+
+/* ============================ LA PREVIA ============================
+   Análisis del cruce con lo que había ANTES del partido (resultados de jornadas anteriores):
+   puntos, puesto, balance de victorias/empates/derrotas (total, en casa y fuera), goles y una estimación. */
+const botonPrevia = (p) => `<button type="button" class="btn-previa" data-previa="${estado.partidos.indexOf(p)}" aria-haspopup="dialog">La previa</button>`;
+
+function statsPrevia(eq, previo) {
+  const z = () => ({ pj: 0, pg: 0, pe: 0, pp: 0, gf: 0, gc: 0 });
+  const t = z(), casa = z(), fuera = z();
+  for (const q of previo) {
+    const esL = q.local === eq; if (!esL && q.visitante !== eq) continue;
+    const gf = esL ? q.gl : q.gv, gc = esL ? q.gv : q.gl;
+    for (const a of [t, esL ? casa : fuera]) {
+      a.pj++; a.gf += gf; a.gc += gc;
+      if (gf > gc) a.pg++; else if (gf < gc) a.pp++; else a.pe++;
+    }
+  }
+  return { ...t, casa, fuera, pts: t.pg * 3 + t.pe };
+}
+function formaPrevia(eq, previo, n = 5) {
+  const j = previo.filter(q => q.local === eq || q.visitante === eq)
+    .sort((a, b) => a.jornada - b.jornada || String(a.fecha || '').localeCompare(String(b.fecha || ''))).slice(-n)
+    .map(q => { const c = q.local === eq, gf = c ? q.gl : q.gv, gc = c ? q.gv : q.gl;
+      return { r: gf > gc ? 'V' : gf < gc ? 'D' : 'E', gf, gc, rival: c ? q.visitante : q.local, jornada: q.jornada, casa: c }; });
+  return [...j, ...Array(n - j.length).fill(null)];
+}
+function formaDe(lista) {
+  return `<span class="forma">${lista.map(x => x
+    ? `<svg class="balon" style="color:${COLOR_FORMA[x.r]}" role="img" aria-label="${TEXTO_FORMA[x.r]} ${x.gf}-${x.gc} ${x.casa ? 'ante' : 'en casa de'} ${esc(x.rival)}"><title>J${x.jornada} · ${TEXTO_FORMA[x.r]} ${x.gf}-${x.gc} ${x.casa ? 'ante' : 'en casa de'} ${esc(x.rival)}</title><use href="#balon"/></svg>`
+    : `<svg class="balon balon-vacio" viewBox="0 0 24 24" aria-label="Sin jugar"><circle cx="12" cy="12" r="10" fill="none" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="3 3"/></svg>`).join('')}</span>`;
+}
+function anilloVED(s, eq) {
+  const R = 40, C = 2 * Math.PI * R, tot = s.pj;
+  const seg = tot ? [[s.pg, '#16a34a'], [s.pe, '#64748b'], [s.pp, '#dc2626']] : [[1, 'var(--evo-gris)']];
+  let acc = 0;
+  const arcos = seg.filter(([n]) => n > 0).map(([n, c]) => { const largo = C * n / (tot || 1); const d = `<circle cx="50" cy="50" r="${R}" fill="none" style="stroke:${c}" stroke-width="9" stroke-dasharray="${Math.max(largo - (tot && seg.filter(([m]) => m > 0).length > 1 ? 1.5 : 0), 0.1)} ${C}" stroke-dashoffset="${-acc}" transform="rotate(-90 50 50)"/>`; acc += largo; return d; }).join('');
+  return `<div class="relative mx-auto" style="width:7.2rem;height:7.2rem"><svg viewBox="0 0 100 100" class="absolute inset-0" role="img" aria-label="${s.pg} victorias, ${s.pe} empates, ${s.pp} derrotas">${arcos}</svg>
+    <div class="absolute inset-0 flex items-center justify-center"><span class="escudo-eq" style="width:3.4rem;height:3.4rem;display:inline-flex">${escudoEq(eq).replace('class="escudo-eq"', 'class="escudo-eq" style="width:100%;height:100%"')}</span></div></div>`;
+}
+function bloqueComp(titulo, l, r, filas) {
+  const tot = l + r, pl = tot ? 100 * l / tot : 50;
+  return `<div class="pv-bloque"><div class="pv-tit"><b>${l}</b><span>${titulo}</span><b>${r}</b></div>
+    <div class="pv-barra" role="img" aria-label="${titulo}: ${l} frente a ${r}">${tot ? `<span class="pv-l" style="width:${pl}%"></span><span class="pv-v" style="width:${100 - pl}%"></span>` : ''}</div>
+    <div class="pb-2">${filas.map(([a, n, b]) => `<div class="pv-fila"><span>${a}</span><em>${n}</em><span>${b}</span></div>`).join('')}</div></div>`;
+}
+const pp2 = (g, pj) => pj ? fmtN(g / pj, 2) : '–';
+function probabilidades1X2(el, ev) {
+  const N = 9, f = [1]; for (let k = 1; k <= N; k++) f[k] = f[k - 1] * k;
+  const po = (k, m) => Math.exp(-m) * Math.pow(m, k) / f[k];
+  let w = 0, e = 0, l = 0;
+  for (let i = 0; i <= N; i++) for (let j = 0; j <= N; j++) { const pr = po(i, el) * po(j, ev); if (i > j) w += pr; else if (i === j) e += pr; else l += pr; }
+  const s = w + e + l; return { l: w / s, e: e / s, v: l / s };
+}
+
+function htmlPrevia(p) {
+  const previo = estado.partidos.filter(q => jugado(q) && q.jornada < p.jornada);
+  const nPrev = previo.length, nTodos = estado.partidos.filter(jugado).length;
+  const tabla = nPrev === nTodos ? clasificacionActual().filas : calcularClasificacion(previo);
+  const pos = (eq) => { if (!nPrev) return '–'; const i = tabla.findIndex(f => f.equipo === eq); return i < 0 ? '–' : i + 1; };
+  const L = statsPrevia(p.local, previo), V = statsPrevia(p.visitante, previo);
+  // puntos y puesto: si se usa la clasificación oficial, sus puntos mandan
+  const fila = (eq) => tabla.find(f => f.equipo === eq);
+  const ptsL = nPrev === nTodos && fila(p.local) ? fila(p.local).pts : L.pts, ptsV = nPrev === nTodos && fila(p.visitante) ? fila(p.visitante).pts : V.pts;
+  const mio = (e) => esMio(e) ? ' text-pz-700' : '';
+  const centro = jugado(p)
+    ? `<div class="text-2xl font-extrabold tabular-nums">${p.gl} - ${p.gv}</div><div class="badge badge-fin">✓ Finalizado</div>${p.prov ? '<div class="text-[10px] text-slate-500 mt-0.5">provisional · según acta</div>' : ''}`
+    : `<div class="text-sm font-semibold">${esc(fmtFecha(p.fecha))}</div><div class="text-xs text-slate-500">${p.hora ? esc(p.hora) : 'Hora por confirmar'}</div>`;
+
+  // estimación (solo con lo anterior al partido)
+  const base = estado.partidos.map(q => (jugado(q) && q.jornada < p.jornada) ? q : { ...q, gl: null, gv: null });
+  let estim = '';
+  if (nPrev > 0) {
+    const pr = predecirPartido(p, calcularFuerzas(base)), pb = probabilidades1X2(pr.esperadoLocal, pr.esperadoVisit);
+    const pc = (x) => Math.round(x * 100);
+    estim = `<div class="pv-bloque"><div class="pv-tit"><b></b><span>Estimación</span><b></b></div>
+      <div class="px-3 py-3 text-center"><div class="text-xs text-slate-500 mb-1">Marcador más probable</div>
+        <div class="text-3xl font-extrabold tabular-nums">${pr.gl} - ${pr.gv}</div>
+        <div class="text-xs text-slate-500 mt-1">Goles esperados: ${fmtN(pr.esperadoLocal, 2)} - ${fmtN(pr.esperadoVisit, 2)}</div>
+        <div class="pv-barra" style="margin:.8rem 0 .3rem" role="img" aria-label="Probabilidad: gana local ${pc(pb.l)}%, empate ${pc(pb.e)}%, gana visitante ${pc(pb.v)}%"><span style="width:${pb.l * 100}%;background:#2a6039"></span><span style="width:${pb.e * 100}%;background:#94a3b8"></span><span style="width:${pb.v * 100}%;background:#d4a017"></span></div>
+        <div class="flex justify-between text-xs font-semibold"><span style="color:#2a6039">Gana local ${pc(pb.l)}%</span><span class="text-slate-500">Empate ${pc(pb.e)}%</span><span style="color:#a67c00">Gana visitante ${pc(pb.v)}%</span></div>
+        <p class="text-[11px] text-slate-400 mt-2">Cálculo sencillo con los goles de las jornadas anteriores. Es solo una orientación.</p></div></div>`;
+  }
+  const bloqueVED = (tit, k) => bloqueComp(tit, L[k], V[k], [[L.casa[k], 'Local', V.casa[k]], [L.fuera[k], 'Visitante', V.fuera[k]]]);
+  const bloqueGoles = (tit, k) => bloqueComp(tit, L[k], V[k], [
+    [pp2(L[k], L.pj), 'Por partido', pp2(V[k], V.pj)], [pp2(L.casa[k], L.casa.pj), 'Local', pp2(V.casa[k], V.casa.pj)], [pp2(L.fuera[k], L.fuera.pj), 'Visitante', pp2(V.fuera[k], V.fuera.pj)]]);
+  const dif = (s) => { const d = s.gf - s.gc; return `<span class="pv-pill" style="background:${d > 0 ? '#16a34a' : d < 0 ? '#dc2626' : '#64748b'}">Diferencia ${d > 0 ? '+' : ''}${d}</span>`; };
+  const sinDatos = nPrev === 0 ? `<div class="mx-3 mt-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 text-sm p-3">Aún no hay partidos jugados antes de este cruce: las estadísticas empezarán a llenarse con los resultados.</div>` : '';
+  return `
+  <div class="pv-cab"><div class="min-w-0 flex-1"><div id="pvTitulo" class="font-extrabold uppercase tracking-wide">La previa · Jornada ${p.jornada}</div>
+      <div class="text-xs text-green-100 truncate">${esc([p.campo].filter(Boolean).join(' · ') || 'Campo por confirmar')}</div></div>
+    <button type="button" id="pvCerrar" class="shrink-0 rounded-full bg-white/15 hover:bg-white/25 w-9 h-9 text-xl leading-none" aria-label="Cerrar">×</button></div>
+  ${sinDatos}
+  <div class="pv-bloque px-3 py-4">
+    <div class="grid grid-cols-[1fr_auto_1fr] gap-2 items-start text-center">
+      <div class="eq-nombre font-semibold${mio(p.local)}">${esc(p.local)}</div><div class="self-center">${centro}</div><div class="eq-nombre font-semibold${mio(p.visitante)}">${esc(p.visitante)}</div>
+      <div class="text-xs text-slate-500">Puntos: <b class="text-slate-800">${ptsL}</b></div><div></div><div class="text-xs text-slate-500">Puntos: <b class="text-slate-800">${ptsV}</b></div>
+      <div>${anilloVED(L, p.local)}</div><div></div><div>${anilloVED(V, p.visitante)}</div>
+    </div>
+    <div class="flex justify-center gap-4 text-xs text-slate-600 mt-2">
+      <span class="inline-flex items-center gap-1"><i class="inline-block w-2.5 h-2.5 rounded-full" style="background:#16a34a"></i>Victorias</span>
+      <span class="inline-flex items-center gap-1"><i class="inline-block w-2.5 h-2.5 rounded-full" style="background:#64748b"></i>Empates</span>
+      <span class="inline-flex items-center gap-1"><i class="inline-block w-2.5 h-2.5 rounded-full" style="background:#dc2626"></i>Derrotas</span></div>
+  </div>
+  <div class="pv-bloque">
+    <div class="pv-tit"><b>${pos(p.local)}</b><span>Posición</span><b>${pos(p.visitante)}</b></div>
+    <div class="pv-tit" style="background:#2a6039"><b>${L.pj}</b><span>Partidos</span><b>${V.pj}</b></div>
+    <div class="grid grid-cols-[1fr_auto_1fr] items-center py-2 px-3 gap-2"><div class="flex justify-start">${formaDe(formaPrevia(p.local, previo))}</div><div class="text-[11px] uppercase font-bold tracking-wide text-slate-500 text-center">Últimos 5</div><div class="flex justify-end">${formaDe(formaPrevia(p.visitante, previo))}</div></div>
+  </div>
+  ${bloqueVED('Victorias', 'pg')}${bloqueVED('Empates', 'pe')}${bloqueVED('Derrotas', 'pp')}
+  ${bloqueGoles('Marcados', 'gf')}
+  ${bloqueGoles('Encajados', 'gc')}
+  <div class="flex justify-between px-4 mb-1">${dif(L)}${dif(V)}</div>
+  ${estim}
+  <p class="text-[11px] text-slate-500 px-4 pb-5">Datos de las jornadas anteriores a este partido${nPrev === nTodos ? ' (clasificación actual)' : ''}. Verde = equipo local · mostaza = visitante.</p>`;
+}
+
+let focoPrevio = null;
+function abrirPrevia(p) {
+  const m = $('modalPrevia'); $('pvHoja').innerHTML = htmlPrevia(p);
+  focoPrevio = document.activeElement; m.classList.add('abierto'); m.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden'; $('pvHoja').scrollTop = 0; $('pvCerrar').focus();
+}
+function cerrarPrevia() {
+  const m = $('modalPrevia'); if (!m.classList.contains('abierto')) return;
+  m.classList.remove('abierto'); m.setAttribute('aria-hidden', 'true'); document.body.style.overflow = '';
+  if (focoPrevio && focoPrevio.focus) try { focoPrevio.focus(); } catch (e) {}
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-previa]');
+  if (b) { const p = estado.partidos[Number(b.dataset.previa)]; if (p) abrirPrevia(p); return; }
+  if (e.target.id === 'modalPrevia' || e.target.closest('#pvCerrar')) cerrarPrevia();
+});
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') cerrarPrevia(); });
 
 /* ------------------------------ Actas ------------------------------ */
 const ICONO_TARJ = { 'amarilla': '<span class="tj tj-a" title="Amarilla"></span>', 'roja': '<span class="tj tj-r" title="Roja"></span>',
@@ -703,7 +1061,7 @@ function panelActa(p) {
   if (!jugado(p) && !p.acta) return '';
   const a = actaDe(p);
   const enlace = p.acta ? `<a href="${esc(p.acta)}" target="_blank" rel="noopener" class="text-xs text-pz-700 underline hover:text-pz-800">Acta oficial en la RFFM</a>` : '';
-  if (!a) return p.acta ? `<div class="mt-1 text-center"><a href="${esc(p.acta)}" target="_blank" rel="noopener" class="btn-acta">Ver acta</a></div>` : '';
+  if (!a) return p.acta ? `<a href="${esc(p.acta)}" target="_blank" rel="noopener" class="btn-acta">Ver acta</a>` : '';
   const col = (nombre, lista, lado) => `
     <div class="min-w-0">
       <div class="font-semibold text-slate-700 mb-1 truncate">${esc(nombre)}</div>
@@ -711,7 +1069,7 @@ function panelActa(p) {
       <div class="text-[11px] uppercase tracking-wide text-slate-400">Suplentes</div><ul class="mb-1">${listaJug(lista, false)}</ul>
       <div class="text-[11px] uppercase tracking-wide text-slate-400">Goles y tarjetas</div><ul>${eventosActa(a, lado) || '<li class="text-slate-400">—</li>'}</ul>
     </div>`;
-  return `<details class="acta mt-1 text-xs"><summary class="btn-acta"><span class="btn-acta-t">Ver acta</span></summary>
+  return `<details class="acta text-xs"><summary class="btn-acta"><span class="btn-acta-t">Ver acta</span></summary>
     <div class="grid grid-cols-2 gap-3 mt-2 text-slate-700">${col(a.local, a.jugadoras_local, 'local')}${col(a.visitante, a.jugadoras_visitante, 'visitante')}</div>
     <div class="mt-2 text-center">${enlace}</div></details>`;
 }
@@ -835,8 +1193,9 @@ $('jugCab').addEventListener('click', (e) => {
 })();
 
 /* Últimos 5 partidos jugados de un equipo (del más antiguo al más reciente). Devuelve siempre 5 huecos: null = sin jugar. */
+let partidosForma = null;   // si no es null, la forma se calcula con estos partidos (vista de una jornada pasada)
 function formaEquipo(eq, n = 5) {
-  const jug = estado.partidos
+  const jug = (partidosForma || estado.partidos)
     .filter(p => jugado(p) && (p.local === eq || p.visitante === eq))
     .sort((a, b) => a.jornada - b.jornada || String(a.fecha || '').localeCompare(String(b.fecha || '')))
     .slice(-n)
@@ -857,8 +1216,8 @@ function formaHtml(eq) {
 
 /* Cambio de puesto de cada equipo respecto a la clasificación anterior a la última jornada con partidos jugados.
    delta > 0: sube; < 0: baja. Devuelve null si aún no hay una jornada anterior con la que comparar. */
-function movimientoPuestos() {
-  const jug = estado.partidos.filter(jugado);
+function movimientoPuestos(hasta = Infinity) {
+  const jug = estado.partidos.filter(p => jugado(p) && p.jornada <= hasta);
   if (!jug.length) return null;
   const J = Math.max(...jug.map(p => p.jornada));
   const previos = jug.filter(p => p.jornada < J);
@@ -896,18 +1255,100 @@ function filaTabla(f, pos, extra = '', conForma = false, mov = null) {
   </tr>`;
 }
 
+/* Jornadas con partidos jugados y clasificación (calculada) tras cada una. La última coincide con la oficial. */
+const jornadasJugadas = () => [...new Set(estado.partidos.filter(jugado).map(p => p.jornada))].sort((a, b) => a - b);
+function posicionesPorJornada() {
+  const js = jornadasJugadas(), res = new Map(estado.equipos.map(e => [e, []]));
+  js.forEach((J, k) => {
+    const fil = (k === js.length - 1) ? clasificacionActual().filas : calcularClasificacion(estado.partidos.filter(p => jugado(p) && p.jornada <= J));
+    fil.forEach((f, i) => res.get(f.equipo) && res.get(f.equipo).push(i + 1));
+  });
+  return { jornadas: js, pos: res };
+}
+
 function renderClasificacion() {
-  const { filas, origen } = clasificacionActual();
-  const mov = movimientoPuestos();
-  $('tablaClasificacion').innerHTML = filas.map((f, i) => filaTabla(f, i + 1, '', true, mov)).join('');
+  const js = jornadasJugadas(), ultima = js.length ? js[js.length - 1] : null;
+  const sel = $('selJornadaClasif');
+  // desplegable: actual + cada jornada jugada (la más reciente primero)
+  const valor = (estado.jornadaClasif === 'actual' || !js.includes(Number(estado.jornadaClasif)) || Number(estado.jornadaClasif) === ultima) ? 'actual' : String(estado.jornadaClasif);
+  estado.jornadaClasif = valor;
+  sel.innerHTML = ['<option value="actual">Actual</option>', ...js.slice(0, -1).reverse().map(j => `<option value="${j}">Tras la jornada ${j}</option>`)].join('');
+  sel.value = valor; sel.disabled = js.length < 2;
+  const hist = valor !== 'actual', hasta = hist ? Number(valor) : Infinity;
+  let filas, origen;
+  if (hist) {
+    const ps = estado.partidos.filter(p => jugado(p) && p.jornada <= hasta);
+    filas = calcularClasificacion(ps); origen = 'calculada'; partidosForma = ps;
+  } else ({ filas, origen } = clasificacionActual());
+  const mov = movimientoPuestos(hasta);
+  try { $('tablaClasificacion').innerHTML = filas.map((f, i) => filaTabla(f, i + 1, '', true, mov)).join(''); }
+  finally { partidosForma = null; }
+  $('tituloClasif').textContent = hist ? `Clasificación tras la jornada ${valor}` : 'Clasificación';
   $('leyendaMov').innerHTML = mov
     ? `<b>Mov.</b>: puestos que sube <span class="mov mov-sube" style="min-width:0">${TRIANGULO}</span> o baja <span class="mov mov-baja" style="min-width:0">${TRIANGULO}</span> (o se mantiene <b class="text-slate-400">=</b>) respecto a la clasificación tras la jornada ${mov.jornada - 1}.`
     : '<b>Mov.</b>: se mostrará a partir de la segunda jornada jugada.';
-  $('origenClasificacion').textContent = origen === 'oficial' ? 'Fuente: RFFM' : 'Calculada a partir de los resultados';
+  $('origenClasificacion').textContent = hist ? 'Calculada a partir de los resultados' : (origen === 'oficial' ? 'Fuente: RFFM' : 'Calculada a partir de los resultados') + (estado.partidos.some(p => p.prov) && !hist ? ' (incluye resultados provisionales de actas)' : '');
+  renderEvolucion();
 }
+
+/* ---------------- Gráfico: puesto de cada equipo jornada a jornada ---------------- */
+const COLORES_EVO = ['#d4a017', '#2563eb', '#dc2626', '#7c3aed', '#0891b2', '#db2777', '#65a30d', '#ea580c'];
+function nombreCorto(n) {
+  const c = String(n).replace(/\s+S\.?\s?A\.?\s?D\.?$/i, '')
+    .replace(/^(C\.?\s?D\.?\s?E?\.?|C\.?\s?F\.?|A\.?\s?D\.?|S\.?\s?A\.?\s?D\.?|U\.?\s?D\.?|C\.?\s?D\.?\s?B\.?|C\.?\s?D\.?\s?A\.?|CLUB (DE )?(FUTBOL|DEPORTIVO)|FUNDACION)\s+/i, '').trim();
+  const t = c.toLowerCase().replace(/(^|[\s'(-])(\p{L})/gu, (m, a, b) => a + b.toUpperCase()).replace(/\s(De|Del|La|Las|Los|El)(?=\s)/g, (m) => m.toLowerCase());
+  return t.length > 19 ? t.slice(0, 18) + '…' : t;
+}
+const resaltados = new Set();      // equipos resaltados además del propio (se pierde al recargar la página)
+function renderEvolucion() {
+  const cont = $('evoWrap');
+  const { jornadas, pos } = posicionesPorJornada();
+  if (jornadas.length < 2) {
+    cont.innerHTML = '<p class="text-sm text-slate-500 p-3">El gráfico aparecerá cuando se hayan jugado al menos dos jornadas.</p>';
+    $('evoNota').textContent = ''; $('btnLimpiarEvo').classList.add('hidden'); return;
+  }
+  const n = estado.equipos.length, dx = 50, dy = 26, mi = 30, md = 132, ms = 18, mb = 26;
+  const W = mi + (jornadas.length - 1) * dx + md, H = ms + (n - 1) * dy + mb;
+  const x = (k) => mi + k * dx, y = (p) => ms + (p - 1) * dy;
+  const destacados = [...(estado.miEquipo ? [estado.miEquipo] : []), ...[...resaltados].filter(e => e !== estado.miEquipo)];
+  const color = (e) => e === estado.miEquipo ? (document.documentElement.classList.contains('dark') ? '#4cc872' : '#2a6039') : COLORES_EVO[(destacados.indexOf(e) - (estado.miEquipo ? 1 : 0)) % COLORES_EVO.length];
+  const hay = destacados.length > 0;
+  let g = '';
+  for (let p = 1; p <= n; p++) g += `<line x1="${mi - 6}" x2="${W - md + 6}" y1="${y(p)}" y2="${y(p)}" style="stroke:var(--evo-grid)"/><text x="${mi - 12}" y="${y(p) + 4}" text-anchor="end" font-size="10" style="fill:var(--evo-ax)">${p}</text>`;
+  jornadas.forEach((J, k) => { g += `<text x="${x(k)}" y="${H - 8}" text-anchor="middle" font-size="10" style="fill:var(--evo-lab)" font-weight="600">J${J}</text>`; });
+  const orden = [...estado.equipos].sort((a, b) => destacados.includes(a) - destacados.includes(b));
+  for (const e of orden) {
+    const ps = pos.get(e); if (!ps || ps.length < 1) continue;
+    const dest = destacados.includes(e), col = dest ? color(e) : 'var(--evo-gris)';
+    const d = ps.map((p, k) => k === 0 ? `M${x(0)} ${y(p)}` : `C${x(k - 1) + dx / 2} ${y(ps[k - 1])} ${x(k) - dx / 2} ${y(p)} ${x(k)} ${y(p)}`).join(' ');
+    const ult = ps.length - 1;
+    g += `<g class="evo-eq" data-eq="${esc(e)}" style="cursor:pointer" tabindex="0" role="button" aria-pressed="${dest}" aria-label="${esc(e)}: ${ps.map((p, k) => 'J' + jornadas[k] + ' puesto ' + p).join(', ')}">
+      <path d="${d}" fill="none" stroke="transparent" stroke-width="14"/>
+      <path d="${d}" fill="none" style="stroke:${col}" stroke-width="${dest ? 3.4 : 1.8}" stroke-linecap="round" stroke-linejoin="round" opacity="${hay && !dest ? .75 : 1}"/>
+      ${ps.map((p, k) => dest
+        ? `<circle cx="${x(k)}" cy="${y(p)}" r="9" style="fill:${col}"/><text x="${x(k)}" y="${y(p) + 3.5}" text-anchor="middle" font-size="10" font-weight="800" fill="#fff">${p}</text>`
+        : `<circle cx="${x(k)}" cy="${y(p)}" r="2.6" style="fill:${col}"/>`).join('')}
+      <text x="${x(ult) + 15}" y="${y(ps[ult]) + 4}" font-size="11" ${dest ? `font-weight="800" style="fill:${col}"` : 'style="fill:var(--evo-lab)"'}>${esc(nombreCorto(e))}</text></g>`;
+  }
+  cont.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="min-width:${W}px;display:block" role="group" aria-label="Evolución del puesto de cada equipo">${g}</svg>`;
+  cont.scrollLeft = cont.scrollWidth;   // se ve primero lo más reciente
+  $('btnLimpiarEvo').classList.toggle('hidden', resaltados.size === 0);
+  $('evoNota').textContent = 'Puesto calculado con los resultados acumulados hasta cada jornada; la última coincide con la clasificación actual. Los partidos aplazados pueden hacer variar jornadas anteriores.';
+}
+$('evoWrap').addEventListener('click', (e) => {
+  const g = e.target.closest('.evo-eq'); if (!g) return;
+  const eq = g.dataset.eq; if (eq === estado.miEquipo) return;
+  if (resaltados.has(eq)) resaltados.delete(eq); else resaltados.add(eq);
+  const sc = $('evoWrap').scrollLeft; renderEvolucion(); $('evoWrap').scrollLeft = sc;
+});
+$('evoWrap').addEventListener('keydown', (e) => { if ((e.key === 'Enter' || e.key === ' ') && e.target.closest && e.target.closest('.evo-eq')) { e.preventDefault(); e.target.closest('.evo-eq').dispatchEvent(new MouseEvent('click', { bubbles: true })); } });
+$('btnLimpiarEvo').addEventListener('click', () => { resaltados.clear(); renderEvolucion(); });
+$('selJornadaClasif').addEventListener('change', (e) => { estado.jornadaClasif = e.target.value; renderClasificacion(); });
 
 function renderPredicciones() {
   const { fuerzas, base, simulados, final } = calcularPrediccion();
+  const adj = calcularAjustada();
+  const ajPorPartido = new Map(adj.sim.map(x => [x.partido, x]));
   const lg = fuerzas.liga;
 
   $('notaModelo').textContent =
@@ -952,8 +1393,45 @@ function renderPredicciones() {
         ${columnaEquipo(p.visitante)}
       </div>
       <div class="mt-1 text-[11px] text-slate-500 text-center">Goles esperados: ${fmtN(s.esperadoLocal, 2)} – ${fmtN(s.esperadoVisit, 2)}</div>
+      ${(() => { const a = ajPorPartido.get(p); return a ? `<div class="mt-1 text-xs text-center font-semibold text-pz-700">Ajustada: ${a.gl} - ${a.gv}</div>` : ''; })()}
     </div>`;
   }).join('') : '<p class="text-slate-500">No quedan partidos por jugar en esa selección.</p>';
+
+  renderAjustada(adj, base, final);
+}
+
+function renderAjustada(adj, base, finalBase) {
+  const rp = adj.rp, n = rp.filas.length, f2 = (x) => fmtN(x, 2);
+  $('notaAjuste').textContent = 'Parte del modelo base pero da más peso a los partidos recientes (cada 3 jornadas el peso se reduce a la mitad) y corrige los goles esperados según lo que el modelo ha acertado o fallado hasta ahora. Se recalcula sola con cada resultado nuevo.';
+  const tarjeta = (titulo, a, b, mejor, pie = '') => `<div class="bg-white rounded-lg shadow p-3 text-center"><div class="text-[11px] uppercase tracking-wide text-slate-500 font-semibold">${titulo}</div>
+    <div class="grid grid-cols-2 gap-2 mt-2"><div><div class="text-[11px] text-slate-500">Base</div><div class="text-lg font-extrabold tabular-nums ${mejor === 'b' ? 'text-pz-700' : ''}">${a}</div></div>
+    <div><div class="text-[11px] text-slate-500">Ajustada</div><div class="text-lg font-extrabold tabular-nums ${mejor === 'a' ? 'text-pz-700' : ''}">${b}</div></div></div>${pie}</div>`;
+  if (!n) {
+    $('ajusteResumen').innerHTML = '<div class="bg-white rounded-lg shadow p-3 text-sm text-slate-600 sm:col-span-3">La fiabilidad de cada modelo se medirá cuando haya al menos dos jornadas jugadas.</div>';
+    $('tablaRetro').innerHTML = '';
+  } else {
+    const r = resumenRetro(rp.filas), pc = (o) => `${o.h}/${o.n} · ${Math.round(100 * o.h / o.n)}%`;
+    const mejorH = r.aj.h > r.base.h ? 'a' : r.aj.h < r.base.h ? 'b' : '', mejorE = r.aj.mae < r.base.mae - 1e-9 ? 'a' : r.aj.mae > r.base.mae + 1e-9 ? 'b' : '';
+    $('ajusteResumen').innerHTML =
+      tarjeta('Aciertos (gana / empate / pierde)', pc(r.base), pc(r.aj), mejorH) +
+      tarjeta('Error medio de goles', f2(r.base.mae), f2(r.aj.mae), mejorE, '<div class="text-[11px] text-slate-400 mt-1">menos es mejor</div>') +
+      `<div class="bg-white rounded-lg shadow p-3 text-center"><div class="text-[11px] uppercase tracking-wide text-slate-500 font-semibold">Ajuste aplicado</div>
+        <div class="text-sm mt-2">Goles del local <b>×${f2(rp.k.l)}</b><br>Goles del visitante <b>×${f2(rp.k.v)}</b></div><div class="text-[11px] text-slate-400 mt-1">${n} partidos medidos</div></div>`;
+    $('tablaRetro').innerHTML = rp.filas.map(({ q, b, a }) => {
+      const real = signo1X2(q.gl, q.gv);
+      const sg = (r) => { const pb = probabilidades1X2(r.esperadoLocal, r.esperadoVisit); return pb.l >= pb.e && pb.l >= pb.v ? 'L' : pb.v >= pb.e ? 'V' : 'E'; };
+      const cel = (r) => `<td class="px-2 py-1 text-center tabular-nums">${r.gl}-${r.gv} <span class="${sg(r) === real ? 'text-pz-700' : 'text-red-600'}">${sg(r) === real ? '✓' : '✗'}</span></td>`;
+      return `<tr class="border-t border-slate-100 ${(esMio(q.local) || esMio(q.visitante)) ? 'bg-pz-50 font-semibold' : ''}"><td class="px-2 py-1">${q.jornada}</td>
+        <td class="px-2 py-1">${esc(nombreCorto(q.local))} – ${esc(nombreCorto(q.visitante))}</td><td class="px-2 py-1 text-center tabular-nums font-bold">${q.gl}-${q.gv}</td>${cel(b)}${cel(a)}</tr>`;
+    }).join('');
+  }
+  const finalAj = generarTablaFinalEstimada(base.filas, adj.sim);
+  const posBase = new Map(finalBase.map((f, i) => [f.equipo, i + 1]));
+  $('tablaAjustada').innerHTML = finalAj.map((f, i) => {
+    const b = posBase.get(f.equipo), d = b - (i + 1);
+    const fl = d > 0 ? `<span class="text-pz-600">▲${d}</span>` : d < 0 ? `<span class="text-red-600">▼${-d}</span>` : '<span class="text-slate-400">＝</span>';
+    return filaTabla(f, i + 1, `<td class="px-3 py-2 text-center text-xs">${b}º ${fl}</td>`);
+  }).join('');
 }
 
 /* Cada 30 s se comprueba si algún partido ha empezado o terminado y, solo entonces, se redibuja el calendario. */
@@ -1142,12 +1620,29 @@ $('miEquipo').addEventListener('change', (e) => {
   renderTodo();
 });
 $('btnRecargar').addEventListener('click', recargar);
-$('btnArchivo').addEventListener('click', () => $('inputArchivo').click());
-$('inputArchivo').addEventListener('change', async (e) => {
-  const f = e.target.files[0];
-  if (f) cargarDatos(await f.text());
-  e.target.value = '';
-});
+
+/* ------------------------- Ajustes y modo oscuro ------------------------- */
+const LS_TEMA = 'liga-tema';
+function aplicarTema(oscuro, guardar = true) {
+  document.documentElement.classList.toggle('dark', oscuro);
+  $('swOscuro').setAttribute('aria-checked', String(oscuro));
+  const m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute('content', oscuro ? '#0d1711' : '#1b4527');
+  if (guardar) { try { localStorage.setItem(LS_TEMA, oscuro ? 'oscuro' : 'claro'); } catch (e) {} }
+  if (typeof renderEvolucion === 'function' && estado.partidos.length) renderEvolucion();   // el gráfico usa colores propios
+}
+function panelAjustes(abrir) {
+  const pnl = $('panelAjustes'), b = $('btnAjustes');
+  pnl.classList.toggle('abierto', abrir); b.setAttribute('aria-expanded', String(abrir));
+}
+$('btnAjustes').addEventListener('click', (e) => { e.stopPropagation(); panelAjustes(!$('panelAjustes').classList.contains('abierto')); });
+$('swOscuro').addEventListener('click', () => aplicarTema(!document.documentElement.classList.contains('dark')));
+document.addEventListener('click', (e) => { if (!e.target.closest('#panelAjustes') && !e.target.closest('#btnAjustes')) panelAjustes(false); });
+function modalDocs(abrir) { $('modalDocs').classList.toggle('abierto', abrir); }
+$('btnDocs').addEventListener('click', () => { panelAjustes(false); modalDocs(true); });
+$('cerrarDocs').addEventListener('click', () => modalDocs(false));
+$('modalDocs').addEventListener('click', (e) => { if (e.target.id === 'modalDocs') modalDocs(false); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { panelAjustes(false); modalDocs(false); } });
+aplicarTema(document.documentElement.classList.contains('dark'), false);
 
 /* ------------------------------ Inicio ----------------------------- */
 (async function init() {
