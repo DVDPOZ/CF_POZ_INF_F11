@@ -1,7 +1,7 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-10-31T16:30:21+00:00",
+  "actualizado": "2026-10-31T17:12:19+00:00",
   "ultimos_cambios": [
     "Clasificación actualizada"
   ],
@@ -2229,9 +2229,20 @@
       "gc": 1
     },
     {
-      "equipo": "C.F. POZUELO DE ALARCON",
+      "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
       "puntos": 7,
       "posicion": 4,
+      "pj": 4,
+      "pg": 2,
+      "pe": 1,
+      "pp": 1,
+      "gf": 15,
+      "gc": 5
+    },
+    {
+      "equipo": "C.F. POZUELO DE ALARCON",
+      "puntos": 7,
+      "posicion": 5,
       "pj": 4,
       "pg": 2,
       "pe": 1,
@@ -2242,7 +2253,7 @@
     {
       "equipo": "S.A.D. FUNDACION RAYO VALLECANO",
       "puntos": 6,
-      "posicion": 5,
+      "posicion": 6,
       "pj": 4,
       "pg": 2,
       "pe": 0,
@@ -2253,7 +2264,7 @@
     {
       "equipo": "C.D. NUEVO BOADILLA",
       "puntos": 6,
-      "posicion": 6,
+      "posicion": 7,
       "pj": 4,
       "pg": 1,
       "pe": 3,
@@ -2264,24 +2275,13 @@
     {
       "equipo": "CDB UNION DEPORTIVA ARGANZUELA",
       "puntos": 6,
-      "posicion": 7,
+      "posicion": 8,
       "pj": 4,
       "pg": 2,
       "pe": 0,
       "pp": 2,
       "gf": 8,
       "gc": 16
-    },
-    {
-      "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
-      "puntos": 4,
-      "posicion": 8,
-      "pj": 3,
-      "pg": 1,
-      "pe": 1,
-      "pp": 1,
-      "gf": 10,
-      "gc": 3
     },
     {
       "equipo": "CLUB DE FUTBOL GETAFE FÉMINAS",
@@ -2320,12 +2320,12 @@
       "equipo": "C.D.A. NAVALCARNERO",
       "puntos": 3,
       "posicion": 12,
-      "pj": 3,
+      "pj": 4,
       "pg": 1,
       "pe": 0,
-      "pp": 2,
-      "gf": 5,
-      "gc": 25
+      "pp": 3,
+      "gf": 7,
+      "gc": 30
     },
     {
       "equipo": "C.D. RIVAS JARAMA",
