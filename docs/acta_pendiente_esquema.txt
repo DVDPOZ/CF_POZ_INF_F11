@@ -1,0 +1,289 @@
+global:
+  id: int = 1
+  siteName: str = <texto de 4 car.>
+  created_at: str = <texto de 24 car.>
+  updated_at: str = <texto de 24 car.>
+  defaultSeo:
+    id: int = 2
+    metaTitle: str = <texto de 4 car.>
+    metaDescription: str = <texto de 35 car.>
+    shareImage:
+      id: int = 11
+      name: str = <texto de 13 car.>
+      alternativeText: NoneType = None
+      caption: NoneType = None
+      width: int = 7739
+      height: int = 1948
+      formats:
+        large:
+          ext: str = <texto de 4 car.>
+          url: str = <texto de 78 car.>
+          hash: str = <texto de 30 car.>
+          mime: str = <texto de 9 car.>
+          name: str = <texto de 19 car.>
+          path: NoneType = None
+          size: float = 63.91
+          width: int = 1000
+          height: int = 252
+        small:
+          ext: str = <texto de 4 car.>
+          url: str = <texto de 78 car.>
+          hash: str = <texto de 30 car.>
+          mime: str = <texto de 9 car.>
+          name: str = <texto de 19 car.>
+          path: NoneType = None
+          size: float = 28.96
+          width: int = 500
+          height: int = 126
+        medium:
+          ext: str = <texto de 4 car.>
+          url: str = <texto de 79 car.>
+          hash: str = <texto de 31 car.>
+          mime: str = <texto de 9 car.>
+          name: str = <texto de 20 car.>
+          path: NoneType = None
+          size: float = 46.67
+          width: int = 750
+          height: int = 189
+        thumbnail:
+          ext: str = <texto de 4 car.>
+          url: str = <texto de 82 car.>
+          hash: str = <texto de 34 car.>
+          mime: str = <texto de 9 car.>
+          name: str = <texto de 23 car.>
+          path: NoneType = None
+          size: float = 11.85
+          width: int = 245
+          height: int = 62
+      hash: str = <texto de 24 car.>
+      ext: str = <texto de 4 car.>
+      mime: str = <texto de 9 car.>
+      size: float = 262.91
+      url: str = <texto de 72 car.>
+      previewUrl: NoneType = None
+      provider: str = <texto de 6 car.>
+      provider_metadata: NoneType = None
+      created_at: str = <texto de 24 car.>
+      updated_at: str = <texto de 24 car.>
+  favicon:
+    id: int = 2356
+    name: str = <texto de 11 car.>
+    alternativeText: str = <texto de 0 car.>
+    caption: str = <texto de 0 car.>
+    width: int = 1121
+    height: int = 1103
+    formats:
+      large:
+        ext: str = <texto de 4 car.>
+        url: str = <texto de 72 car.>
+        hash: str = <texto de 24 car.>
+        mime: str = <texto de 9 car.>
+        name: str = <texto de 17 car.>
+        path: NoneType = None
+        size: float = 190.19
+        width: int = 1000
+        height: int = 984
+      small:
+        ext: str = <texto de 4 car.>
+        url: str = <texto de 72 car.>
+        hash: str = <texto de 24 car.>
+        mime: str = <texto de 9 car.>
+        name: str = <texto de 17 car.>
+        path: NoneType = None
+        size: float = 71.44
+        width: int = 500
+        height: int = 492
+      medium:
+        ext: str = <texto de 4 car.>
+        url: str = <texto de 73 car.>
+        hash: str = <texto de 25 car.>
+        mime: str = <texto de 9 car.>
+        name: str = <texto de 18 car.>
+        path: NoneType = None
+        size: float = 125.96
+        width: int = 750
+        height: int = 738
+      thumbnail:
+        ext: str = <texto de 4 car.>
+        url: str = <texto de 76 car.>
+        hash: str = <texto de 28 car.>
+        mime: str = <texto de 9 car.>
+        name: str = <texto de 21 car.>
+        path: NoneType = None
+        size: float = 18.4
+        width: int = 159
+        height: int = 156
+    hash: str = <texto de 18 car.>
+    ext: str = <texto de 4 car.>
+    mime: str = <texto de 9 car.>
+    size: float = 125.63
+    url: str = <texto de 66 car.>
+    previewUrl: NoneType = None
+    provider: str = <texto de 6 car.>
+    provider_metadata: NoneType = None
+    created_at: str = <texto de 24 car.>
+    updated_at: str = <texto de 24 car.>
+game:
+  estado: str = <texto de 1 car.>
+  sesion_ok: str = <texto de 1 car.>
+  codacta: str = <texto de 7 car.>
+  nombre_competicion: str = <texto de 21 car.>
+  nombre_grupo: str = <texto de 7 car.>
+  jornada: str = <texto de 1 car.>
+  fecha: str = <texto de 10 car.>
+  hora: str = <texto de 5 car.>
+  campo: str = <texto de 37 car.>
+  codigo_campo: str = <texto de 8 car.>
+  acta_cerrada: str = <texto de 1 car.>
+  partido_en_juego: str = <texto de 1 car.>
+  codigo_equipo_local: str = <texto de 8 car.>
+  esquema_local: str = <texto de 7 car.>
+  equipo_local: str = <texto de 30 car.>
+  escudo_local: str = <texto de 53 car.>
+  goles_local: str = <texto de 0 car.>
+  codigo_equipo_visitante: str = <texto de 8 car.>
+  esquema_visitante: str = <texto de 7 car.>
+  equipo_visitante: str = <texto de 38 car.>
+  escudo_visitante: str = <texto de 84 car.>
+  goles_visitante: str = <texto de 0 car.>
+  hay_penaltis: str = <texto de 0 car.>
+  penaltis_casa: str = <texto de 0 car.>
+  penaltis_fuera: str = <texto de 0 car.>
+  suspendido: str = <texto de 1 car.>
+  codacta_origen: str = <texto de 0 car.>
+  goles_penalti [0]:
+  goles_equipo_local [0]:
+  goles_equipo_visitante [0]:
+  foto_delegadocampo: str = <texto de 0 car.>
+  delegadocampo: str = <texto de 0 car.>
+  foto_delegadolocal: str = <texto de 0 car.>
+  delegadolocal: str = <texto de 0 car.>
+  foto_entrenador_local: str = <texto de 0 car.>
+  cod_entrenador_local: str = <texto de 0 car.>
+  entrenador_local: str = <texto de 11 car.>
+  foto_entrenador2_local: str = <texto de 0 car.>
+  cod_entrenador2_local: str = <texto de 0 car.>
+  entrenador2_local: str = <texto de 0 car.>
+  otros_tecnicos_local [0]:
+  jugadores_equipo_local [0]:
+  foto_delegado_visitante: str = <texto de 0 car.>
+  delegado_visitante: str = <texto de 0 car.>
+  foto_entrenador_visitante: str = <texto de 0 car.>
+  cod_entrenador_visitante: str = <texto de 0 car.>
+  entrenador_visitante: str = <texto de 11 car.>
+  foto_entrenador_visitante2: str = <texto de 0 car.>
+  cod_entrenador_visitante2: str = <texto de 0 car.>
+  entrenador2_visitante: str = <texto de 0 car.>
+  otros_tecnicos_visitante [0]:
+  jugadores_equipo_visitante [0]:
+  sustituciones_equipo_local [0]:
+  sustituciones_equipo_visitante [0]:
+  tarjetas_equipo_local [0]:
+  tarjetas_equipo_visitante [0]:
+  otras_tarjetas [0]:
+  arbitros_partido [0]:
+  host: str = <texto de 23 car.>
+seasonName: str = <texto de 9 car.>
+notices [9]:
+  (elemento más completo de 9; claves vistas: id, aaa, published_at, created_at, updated_at, title, link)
+  id: int = 97
+  aaa: NoneType = None
+  published_at: str = <texto de 24 car.>
+  created_at: str = <texto de 24 car.>
+  updated_at: str = <texto de 24 car.>
+  title: str = <texto de 71 car.>
+  link: str = <texto de 97 car.>
+categories:
+  id: int = 1
+  name: str = <texto de 15 car.>
+  slug: str = <texto de 15 car.>
+  visible: bool = True
+  items [8]:
+    (elemento más completo de 8; claves vistas: id, title, type, path, externalPath, uiRouterKey, menuAttached, order, parent, master, created_by, updated_by, created_at, updated_at, related, audience, items)
+    id: int = 171
+    title: str = <texto de 10 car.>
+    type: str = <texto de 8 car.>
+    path: str = <texto de 23 car.>
+    externalPath: NoneType = None
+    uiRouterKey: str = <texto de 10 car.>
+    menuAttached: bool = True
+    order: int = 1
+    parent: NoneType = None
+    master: int = 1
+    created_by: NoneType = None
+    updated_by: NoneType = None
+    created_at: str = <texto de 24 car.>
+    updated_at: str = <texto de 24 car.>
+    related [1]:
+      (elemento más completo de 1; claves vistas: __contentType, id, title, slug, full_slug, pagina, published_at, created_by, updated_by, created_at, updated_at, content, sidebar, Layout, seccion_lateral, MostrarBannerSuperior)
+      __contentType: str = <texto de 6 car.>
+      id: int = 93
+      title: str = <texto de 19 car.>
+      slug: str = <texto de 10 car.>
+      full_slug: str = <texto de 21 car.>
+      pagina: int = 94
+      published_at: str = <texto de 24 car.>
+      created_by: int = 3
+      updated_by: int = 5
+      created_at: str = <texto de 24 car.>
+      updated_at: str = <texto de 24 car.>
+      content: NoneType = None
+      sidebar: NoneType = None
+      Layout: str = <texto de 11 car.>
+      seccion_lateral: NoneType = None
+      MostrarBannerSuperior: NoneType = None
+    audience [0]:
+    items [5]:
+      (elemento más completo de 5; claves vistas: id, title, type, path, externalPath, uiRouterKey, menuAttached, order, parent, master, created_by, updated_by, created_at, updated_at, related, audience, items)
+      id: int = 172
+      title: str = <texto de 10 car.>
+      type: str = <texto de 8 car.>
+      path: str = <texto de 3 car.>
+      externalPath: NoneType = None
+      uiRouterKey: str = <texto de 10 car.>
+      menuAttached: bool = True
+      order: int = 1
+      parent: int = 171
+      master: int = 1
+      created_by: NoneType = None
+      updated_by: NoneType = None
+      created_at: str = <texto de 24 car.>
+      updated_at: str = <texto de 24 car.>
+      related [1]:
+        (elemento más completo de 1; claves vistas: __contentType, id, title, slug, full_slug, pagina, published_at, created_by, updated_by, created_at, updated_at, content, sidebar, Layout, seccion_lateral, MostrarBannerSuperior)
+        __contentType: str = <texto de 6 car.>
+        id: int = 94
+        title: str = <texto de 10 car.>
+        slug: str = <texto de 10 car.>
+        full_slug: str = <texto de 10 car.>
+        pagina: NoneType = None
+        published_at: str = <texto de 24 car.>
+        created_by: int = 3
+        updated_by: int = 3
+        created_at: str = <texto de 24 car.>
+        updated_at: str = <texto de 24 car.>
+        content: NoneType = None
+        sidebar: NoneType = None
+        Layout: str = <texto de 11 car.>
+        seccion_lateral: NoneType = None
+        MostrarBannerSuperior: NoneType = None
+      audience [0]:
+      items [1]:
+        (elemento más completo de 1; claves vistas: id, title, type, path, externalPath, uiRouterKey, menuAttached, order, parent, master, created_by, updated_by, created_at, updated_at, related, audience, items)
+        id: int = 173
+        title: str = <texto de 16 car.>
+        type: str = <texto de 8 car.>
+        path: NoneType = None
+        externalPath: str = <texto de 23 car.>
+        uiRouterKey: str = <texto de 16 car.>
+        menuAttached: bool = True
+        order: int = 1
+        parent: int = 172
+        master: int = 1
+        created_by: NoneType = None
+        updated_by: NoneType = None
+        created_at: str = <texto de 24 car.>
+        updated_at: str = <texto de 24 car.>
+        related [0]:
+        audience [0]:
+        items [0]:
