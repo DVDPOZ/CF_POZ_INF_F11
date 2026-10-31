@@ -1,0 +1,1986 @@
+{
+  "temporada": "2026-2027",
+  "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
+  "actualizado": "2026-10-29T21:00:00+01:00",
+  "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
+  "origen_datos": "manual (datos pegados el 29/10/2026)",
+  "clasificacion_origen": "calculada",
+  "partidos": [
+    {
+      "jornada": 1,
+      "fecha": "2026-10-10",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": 2,
+      "resultado_visitante": 2,
+      "campo": null
+    },
+    {
+      "jornada": 1,
+      "fecha": "2026-10-10",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": 9,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 1,
+      "fecha": "2026-10-10",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": 7,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 1,
+      "fecha": "2026-10-10",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": 5,
+      "resultado_visitante": 1,
+      "campo": null
+    },
+    {
+      "jornada": 1,
+      "fecha": "2026-10-10",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": 2,
+      "resultado_visitante": 1,
+      "campo": null
+    },
+    {
+      "jornada": 1,
+      "fecha": "2026-10-10",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": 0,
+      "resultado_visitante": 4,
+      "campo": null
+    },
+    {
+      "jornada": 1,
+      "fecha": "2026-10-10",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": 13,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 2,
+      "fecha": "2026-10-17",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": 1,
+      "resultado_visitante": 1,
+      "campo": null
+    },
+    {
+      "jornada": 2,
+      "fecha": "2026-10-17",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": 2,
+      "resultado_visitante": 2,
+      "campo": null
+    },
+    {
+      "jornada": 2,
+      "fecha": "2026-10-17",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": 0,
+      "resultado_visitante": 10,
+      "campo": null
+    },
+    {
+      "jornada": 2,
+      "fecha": "2026-10-17",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": 10,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 2,
+      "fecha": "2026-10-17",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": 0,
+      "resultado_visitante": 8,
+      "campo": null
+    },
+    {
+      "jornada": 2,
+      "fecha": "2026-10-17",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": 0,
+      "resultado_visitante": 21,
+      "campo": null
+    },
+    {
+      "jornada": 2,
+      "fecha": "2026-10-17",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": 0,
+      "resultado_visitante": 2,
+      "campo": null
+    },
+    {
+      "jornada": 3,
+      "fecha": "2026-10-24",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": 16,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 3,
+      "fecha": "2026-10-24",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": 1,
+      "resultado_visitante": 2,
+      "campo": null
+    },
+    {
+      "jornada": 3,
+      "fecha": "2026-10-24",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": 2,
+      "resultado_visitante": 5,
+      "campo": null
+    },
+    {
+      "jornada": 3,
+      "fecha": "2026-10-24",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": 0,
+      "resultado_visitante": 1,
+      "campo": null
+    },
+    {
+      "jornada": 3,
+      "fecha": "2026-10-24",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": 3,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 3,
+      "fecha": "2026-10-24",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": 8,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 3,
+      "fecha": "2026-10-24",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": 3,
+      "resultado_visitante": 0,
+      "campo": null
+    },
+    {
+      "jornada": 4,
+      "fecha": "2026-10-31",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 4,
+      "fecha": "2026-10-31",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 4,
+      "fecha": "2026-10-31",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 4,
+      "fecha": "2026-10-31",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 4,
+      "fecha": "2026-10-31",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 4,
+      "fecha": "2026-10-31",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 4,
+      "fecha": "2026-10-31",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-07",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-07",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-07",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-07",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-07",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-07",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-07",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-14",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-14",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-14",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-14",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-14",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-14",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-14",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-21",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-21",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-21",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-21",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-21",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-21",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-21",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 8,
+      "fecha": "2026-11-28",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 8,
+      "fecha": "2026-11-28",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 8,
+      "fecha": "2026-11-28",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 8,
+      "fecha": "2026-11-28",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 8,
+      "fecha": "2026-11-28",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 8,
+      "fecha": "2026-11-28",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 8,
+      "fecha": "2026-11-28",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-12",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-12",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-12",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-12",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-12",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-12",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-12",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 10,
+      "fecha": "2026-12-19",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 10,
+      "fecha": "2026-12-19",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 10,
+      "fecha": "2026-12-19",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 10,
+      "fecha": "2026-12-19",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 10,
+      "fecha": "2026-12-19",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 10,
+      "fecha": "2026-12-19",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 10,
+      "fecha": "2026-12-19",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-16",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-16",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-16",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-16",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-16",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-16",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-16",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-23",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-23",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-23",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-23",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-23",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-23",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-23",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 13,
+      "fecha": "2027-01-30",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 13,
+      "fecha": "2027-01-30",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 13,
+      "fecha": "2027-01-30",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 13,
+      "fecha": "2027-01-30",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 13,
+      "fecha": "2027-01-30",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 13,
+      "fecha": "2027-01-30",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 13,
+      "fecha": "2027-01-30",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 14,
+      "fecha": "2027-02-06",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 14,
+      "fecha": "2027-02-06",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 14,
+      "fecha": "2027-02-06",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 14,
+      "fecha": "2027-02-06",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 14,
+      "fecha": "2027-02-06",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 14,
+      "fecha": "2027-02-06",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 14,
+      "fecha": "2027-02-06",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 15,
+      "fecha": "2027-02-13",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 15,
+      "fecha": "2027-02-13",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 15,
+      "fecha": "2027-02-13",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 15,
+      "fecha": "2027-02-13",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 15,
+      "fecha": "2027-02-13",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 15,
+      "fecha": "2027-02-13",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 15,
+      "fecha": "2027-02-13",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 16,
+      "fecha": "2027-02-20",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 16,
+      "fecha": "2027-02-20",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 16,
+      "fecha": "2027-02-20",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 16,
+      "fecha": "2027-02-20",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 16,
+      "fecha": "2027-02-20",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 16,
+      "fecha": "2027-02-20",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 16,
+      "fecha": "2027-02-20",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 17,
+      "fecha": "2027-02-27",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 17,
+      "fecha": "2027-02-27",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 17,
+      "fecha": "2027-02-27",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 17,
+      "fecha": "2027-02-27",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 17,
+      "fecha": "2027-02-27",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 17,
+      "fecha": "2027-02-27",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 17,
+      "fecha": "2027-02-27",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 18,
+      "fecha": "2027-03-06",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 18,
+      "fecha": "2027-03-06",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 18,
+      "fecha": "2027-03-06",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 18,
+      "fecha": "2027-03-06",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 18,
+      "fecha": "2027-03-06",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 18,
+      "fecha": "2027-03-06",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 18,
+      "fecha": "2027-03-06",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 19,
+      "fecha": "2027-03-13",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 19,
+      "fecha": "2027-03-13",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 19,
+      "fecha": "2027-03-13",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 19,
+      "fecha": "2027-03-13",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 19,
+      "fecha": "2027-03-13",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 19,
+      "fecha": "2027-03-13",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 19,
+      "fecha": "2027-03-13",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 20,
+      "fecha": "2027-03-20",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 20,
+      "fecha": "2027-03-20",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 20,
+      "fecha": "2027-03-20",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 20,
+      "fecha": "2027-03-20",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 20,
+      "fecha": "2027-03-20",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 20,
+      "fecha": "2027-03-20",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 20,
+      "fecha": "2027-03-20",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 21,
+      "fecha": "2027-04-03",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 21,
+      "fecha": "2027-04-03",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 21,
+      "fecha": "2027-04-03",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 21,
+      "fecha": "2027-04-03",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 21,
+      "fecha": "2027-04-03",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 21,
+      "fecha": "2027-04-03",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 21,
+      "fecha": "2027-04-03",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 22,
+      "fecha": "2027-04-10",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 22,
+      "fecha": "2027-04-10",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 22,
+      "fecha": "2027-04-10",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 22,
+      "fecha": "2027-04-10",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 22,
+      "fecha": "2027-04-10",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 22,
+      "fecha": "2027-04-10",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 22,
+      "fecha": "2027-04-10",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 23,
+      "fecha": "2027-04-17",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 23,
+      "fecha": "2027-04-17",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 23,
+      "fecha": "2027-04-17",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 23,
+      "fecha": "2027-04-17",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 23,
+      "fecha": "2027-04-17",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 23,
+      "fecha": "2027-04-17",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 23,
+      "fecha": "2027-04-17",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 24,
+      "fecha": "2027-04-24",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 24,
+      "fecha": "2027-04-24",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 24,
+      "fecha": "2027-04-24",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 24,
+      "fecha": "2027-04-24",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 24,
+      "fecha": "2027-04-24",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 24,
+      "fecha": "2027-04-24",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 24,
+      "fecha": "2027-04-24",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 25,
+      "fecha": "2027-05-01",
+      "hora": null,
+      "equipo_local": "A.D. PIQUEÑAS",
+      "equipo_visitante": "C.F. POZUELO DE ALARCON",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 25,
+      "fecha": "2027-05-01",
+      "hora": null,
+      "equipo_local": "C.D.A. NAVALCARNERO",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 25,
+      "fecha": "2027-05-01",
+      "hora": null,
+      "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
+      "equipo_visitante": "A.D. LA MECA DE RIVAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 25,
+      "fecha": "2027-05-01",
+      "hora": null,
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 25,
+      "fecha": "2027-05-01",
+      "hora": null,
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 25,
+      "fecha": "2027-05-01",
+      "hora": null,
+      "equipo_local": "C.D. GETAFE FEMENINO 'A'",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 25,
+      "fecha": "2027-05-01",
+      "hora": null,
+      "equipo_local": "C.D. RIVAS JARAMA",
+      "equipo_visitante": "C.D. LEGANES S.A.D.",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 26,
+      "fecha": "2027-05-08",
+      "hora": null,
+      "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 26,
+      "fecha": "2027-05-08",
+      "hora": null,
+      "equipo_local": "A.D. LA MECA DE RIVAS",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 26,
+      "fecha": "2027-05-08",
+      "hora": null,
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 26,
+      "fecha": "2027-05-08",
+      "hora": null,
+      "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "equipo_visitante": "C.D. RIVAS JARAMA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 26,
+      "fecha": "2027-05-08",
+      "hora": null,
+      "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo_visitante": "C.D. NUEVO BOADILLA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 26,
+      "fecha": "2027-05-08",
+      "hora": null,
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "CDE ARANJUEZ CFF",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    },
+    {
+      "jornada": 26,
+      "fecha": "2027-05-08",
+      "hora": null,
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": null
+    }
+  ],
+  "clasificacion": [
+    {
+      "equipo": "C.D. LEGANES S.A.D.",
+      "puntos": 9,
+      "pj": 3,
+      "pg": 3,
+      "pe": 0,
+      "pp": 0,
+      "gf": 37,
+      "gc": 0,
+      "posicion": 1
+    },
+    {
+      "equipo": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "puntos": 9,
+      "pj": 3,
+      "pg": 3,
+      "pe": 0,
+      "pp": 0,
+      "gf": 23,
+      "gc": 1,
+      "posicion": 2
+    },
+    {
+      "equipo": "C.D. GETAFE FEMENINO 'A'",
+      "puntos": 7,
+      "pj": 3,
+      "pg": 2,
+      "pe": 1,
+      "pp": 0,
+      "gf": 27,
+      "gc": 2,
+      "posicion": 3
+    },
+    {
+      "equipo": "S.A.D. FUNDACION RAYO VALLECANO",
+      "puntos": 6,
+      "pj": 3,
+      "pg": 2,
+      "pe": 0,
+      "pp": 1,
+      "gf": 12,
+      "gc": 5,
+      "posicion": 4
+    },
+    {
+      "equipo": "C.F. POZUELO DE ALARCON",
+      "puntos": 6,
+      "pj": 3,
+      "pg": 2,
+      "pe": 0,
+      "pp": 1,
+      "gf": 5,
+      "gc": 4,
+      "posicion": 5
+    },
+    {
+      "equipo": "C.D. NUEVO BOADILLA",
+      "puntos": 5,
+      "pj": 3,
+      "pg": 1,
+      "pe": 2,
+      "pp": 0,
+      "gf": 6,
+      "gc": 5,
+      "posicion": 6
+    },
+    {
+      "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "puntos": 4,
+      "pj": 3,
+      "pg": 1,
+      "pe": 1,
+      "pp": 1,
+      "gf": 10,
+      "gc": 3,
+      "posicion": 7
+    },
+    {
+      "equipo": "A.D. LA MECA DE RIVAS",
+      "puntos": 4,
+      "pj": 3,
+      "pg": 1,
+      "pe": 1,
+      "pp": 1,
+      "gf": 8,
+      "gc": 4,
+      "posicion": 8
+    },
+    {
+      "equipo": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "puntos": 4,
+      "pj": 3,
+      "pg": 1,
+      "pe": 1,
+      "pp": 1,
+      "gf": 5,
+      "gc": 4,
+      "posicion": 9
+    },
+    {
+      "equipo": "CDB UNION DEPORTIVA ARGANZUELA",
+      "puntos": 3,
+      "pj": 3,
+      "pg": 1,
+      "pe": 0,
+      "pp": 2,
+      "gf": 4,
+      "gc": 16,
+      "posicion": 10
+    },
+    {
+      "equipo": "C.D.A. NAVALCARNERO",
+      "puntos": 3,
+      "pj": 3,
+      "pg": 1,
+      "pe": 0,
+      "pp": 2,
+      "gf": 5,
+      "gc": 25,
+      "posicion": 11
+    },
+    {
+      "equipo": "CDE ARANJUEZ CFF",
+      "puntos": 0,
+      "pj": 3,
+      "pg": 0,
+      "pe": 0,
+      "pp": 3,
+      "gf": 1,
+      "gc": 13,
+      "posicion": 12
+    },
+    {
+      "equipo": "C.D. RIVAS JARAMA",
+      "puntos": 0,
+      "pj": 3,
+      "pg": 0,
+      "pe": 0,
+      "pp": 3,
+      "gf": 1,
+      "gc": 26,
+      "posicion": 13
+    },
+    {
+      "equipo": "A.D. PIQUEÑAS",
+      "puntos": 0,
+      "pj": 3,
+      "pg": 0,
+      "pe": 0,
+      "pp": 3,
+      "gf": 0,
+      "gc": 36,
+      "posicion": 14
+    }
+  ]
+}

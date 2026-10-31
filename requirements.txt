@@ -1,0 +1,6 @@
+requests>=2.31
+beautifulsoup4>=4.12
+# servidor.py solo usa la biblioteca estándar de Python: no hace falta instalar nada más.
+# Opcional, solo para la opción --navegador (si la RFFM bloquea las descargas automáticas):
+# playwright>=1.44   (después:  playwright install chromium)
+cryptography>=42
