@@ -8,7 +8,7 @@
 <!-- ===== PWA / iOS: "Añadir a pantalla de inicio" ===== -->
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1b4527">
-<script>try { if (localStorage.getItem('liga-tema') === 'oscuro') document.documentElement.classList.add('dark'); } catch (e) {}</script>
+<script>/* modo oscuro por defecto; solo es claro si se eligió así en Ajustes */ try { if (localStorage.getItem('liga-tema') !== 'claro') document.documentElement.classList.add('dark'); } catch (e) { document.documentElement.classList.add('dark'); }</script>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -43,6 +43,18 @@ if (window.tailwind) tailwind.config = { theme: { extend: {
 </script>
 <style>
   .nav-btn { border-bottom: 4px solid transparent; }
+  @media (min-width: 768px) { .tab-ic { display:none } }
+  /* móvil: las secciones pasan a una barra fija inferior (siempre visible, sin desplazar) */
+  @media (max-width: 767px) {
+    #barraNav { position:fixed; left:0; right:0; bottom:0; z-index:50; background:#1b4527; border-top:1px solid rgba(255,255,255,.18); padding-bottom:env(safe-area-inset-bottom); box-shadow:0 -4px 14px rgba(0,0,0,.18) }
+    #barraNav nav { display:grid; grid-template-columns:repeat(4,1fr); padding:0 }
+    #barraNav .nav-btn { display:flex; flex-direction:column; align-items:center; gap:.15rem; font-size:.6rem; line-height:1.1; padding:.5rem 0 .45rem; color:rgba(255,255,255,.6); border-bottom:0; border-top:3px solid transparent }
+    #barraNav .nav-btn:hover { border-top-color:transparent }
+    #barraNav .nav-btn[aria-current="page"] { color:#fff; border-top-color:#e6e9e7 }
+    html.dark #barraNav { background:#0d1711; border-top-color:#2c4034 }
+    html.dark #barraNav .nav-btn { color:#8fa597 } html.dark #barraNav .nav-btn[aria-current="page"] { color:#fff }
+    body { padding-bottom:calc(4.4rem + env(safe-area-inset-bottom)) }
+  }
   .nav-btn:hover { border-bottom-color: rgba(230,233,231,.55); }
   .nav-btn[aria-current="page"] { border-bottom-color: #e6e9e7; }
   /* iOS en modo app (barra de estado translúcida): el contenido llega hasta arriba del todo */
@@ -222,12 +234,12 @@ if (window.tailwind) tailwind.config = { theme: { extend: {
       <div class="js-vivo hidden lg:flex absolute right-16 top-3 max-w-[19rem] items-center gap-2 rounded-2xl bg-black/25 px-3 py-1 text-xs font-semibold leading-tight text-white" role="status" aria-live="polite"></div>
     </div>
   </div>
-  <div class="bg-pz-500">
-    <nav class="max-w-5xl mx-auto px-4 pl-[6.25rem] md:pl-[10.5rem] flex gap-5 md:gap-10 overflow-x-auto">
-      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="calendario">Calendario</button>
-      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="clasificacion">Clasificación</button>
-      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="predicciones">Predicciones</button>
-      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide text-sm md:text-xl py-2.5 md:py-3" data-view="jugadoras">Jugadoras</button>
+  <div id="barraNav" class="bg-pz-500">
+    <nav class="max-w-5xl mx-auto px-4 md:pl-[10.5rem] md:flex md:gap-10" aria-label="Secciones">
+      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide md:text-xl md:py-3" data-view="calendario"><svg class="tab-ic" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.2"/><path stroke-linecap="round" d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Calendario</span></button>
+      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide md:text-xl md:py-3" data-view="clasificacion"><svg class="tab-ic" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span>Clasificación</span></button>
+      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide md:text-xl md:py-3" data-view="predicciones"><svg class="tab-ic" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 17l5-5 4 3 8-9"/><path stroke-linecap="round" d="M15 6h5v5"/></svg><span>Predicciones</span></button>
+      <button class="nav-btn font-marca whitespace-nowrap text-white uppercase font-semibold tracking-wide md:text-xl md:py-3" data-view="jugadoras"><svg class="tab-ic" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path stroke-linecap="round" d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17.5" cy="9" r="2.4"/><path stroke-linecap="round" d="M17 14.2c2.4 0 4.2 1.9 4.2 4.3"/></svg><span>Jugadoras</span></button>
     </nav>
   </div>
   <div class="js-logo-wrap absolute inset-x-0 top-2 md:top-3 pointer-events-none">
@@ -588,6 +600,18 @@ function fmtFecha(f) {
 }
 const fmtN = (n, dec = 1) => (Math.round(n * 10 ** dec) / 10 ** dec).toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec });
 const esMio = (e) => estado.miEquipo && e === estado.miEquipo;
+function jornadaInicial() {   // jornada del equipo propio: la última si se jugó hace poco (≤3 días), si no la próxima
+  const mios = estado.partidos.filter(p => esMio(p.local) || esMio(p.visitante));
+  if (!mios.length) return proximaJornada();
+  const jug = mios.filter(jugado), pend = mios.filter(p => !jugado(p));
+  const ult = jug.length ? jug.reduce((a, b) => b.jornada > a.jornada ? b : a) : null;
+  const sig = pend.length ? pend.reduce((a, b) => b.jornada < a.jornada ? b : a) : null;
+  if (ult && sig) {
+    const t = ult.fecha ? new Date(ult.fecha + 'T12:00:00').getTime() : 0;
+    return (Date.now() - t) / 864e5 <= 3 ? ult.jornada : sig.jornada;
+  }
+  return (sig || ult).jornada;
+}
 function proximaJornada() { const p = estado.partidos.find(x => !jugado(x)); return p ? p.jornada : null; }
 
 /* ------------------------- Clasificación --------------------------- */
@@ -1475,7 +1499,7 @@ function pintarVivo() {
   if (vivo.conexion === 'estatico' && location.protocol !== 'file:') {
     // publicada en internet (sin servidor propio): la web consulta los datos cada pocos minutos
     const f = estado.actualizado && !isNaN(new Date(estado.actualizado)) ? new Date(estado.actualizado) : null;
-    color = 'bg-green-400'; texto = f ? 'Datos de ' + f.toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' }) + ' · se actualizan solos' : 'Datos guardados · se actualizan solos';
+    color = 'bg-green-400'; pulso = true; texto = f ? 'Datos de ' + f.toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' }) + ' · se actualizan solos' : 'Datos guardados · se actualizan solos';
   } else if (vivo.conexion === 'estatico') {
     texto = 'Sin tiempo real · inicia la app (ver aviso)';
   } else if (vivo.conexion === 'inicio' || (vivo.conexion === 'conectando')) {
@@ -1651,6 +1675,10 @@ aplicarTema(document.documentElement.classList.contains('dark'), false);
   mostrarVista(VISTAS.includes(h) ? h : 'calendario');
   pintarVivo();
   await recargar();
+  try {
+    const j = jornadaInicial();
+    if (j != null && [...$('fJornada').options].some(o => o.value === String(j))) { $('fJornada').value = String(j); renderCalendario(); }
+  } catch (e) {}
   iniciarEnVivo();
 })();
 </script>
