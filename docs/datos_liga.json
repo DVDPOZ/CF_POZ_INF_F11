@@ -1,7 +1,7 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-10-31T14:44:48+00:00",
+  "actualizado": "2026-10-31T15:17:35+00:00",
   "ultimos_cambios": [
     "Clasificación actualizada"
   ],
@@ -2295,9 +2295,20 @@
       "gc": 4
     },
     {
-      "equipo": "CDB UNION DEPORTIVA ARGANZUELA",
+      "equipo": "CDE ARANJUEZ CFF",
       "puntos": 3,
       "posicion": 10,
+      "pj": 4,
+      "pg": 1,
+      "pe": 0,
+      "pp": 3,
+      "gf": 8,
+      "gc": 15
+    },
+    {
+      "equipo": "CDB UNION DEPORTIVA ARGANZUELA",
+      "puntos": 3,
+      "posicion": 11,
       "pj": 3,
       "pg": 1,
       "pe": 0,
@@ -2308,7 +2319,7 @@
     {
       "equipo": "C.D.A. NAVALCARNERO",
       "puntos": 3,
-      "posicion": 11,
+      "posicion": 12,
       "pj": 3,
       "pg": 1,
       "pe": 0,
@@ -2317,26 +2328,15 @@
       "gc": 25
     },
     {
-      "equipo": "CDE ARANJUEZ CFF",
-      "puntos": 0,
-      "posicion": 12,
-      "pj": 3,
-      "pg": 0,
-      "pe": 0,
-      "pp": 3,
-      "gf": 1,
-      "gc": 13
-    },
-    {
       "equipo": "C.D. RIVAS JARAMA",
       "puntos": 0,
       "posicion": 13,
-      "pj": 3,
+      "pj": 4,
       "pg": 0,
       "pe": 0,
-      "pp": 3,
-      "gf": 1,
-      "gc": 26
+      "pp": 4,
+      "gf": 3,
+      "gc": 33
     },
     {
       "equipo": "A.D. PIQUEÑAS",
