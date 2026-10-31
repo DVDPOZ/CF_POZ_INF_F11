@@ -34,6 +34,7 @@ jobs:
           python extractor.py --salida docs/datos_liga.json
           # Si el lector de actas no reconoce el formato, se publica un esquema SIN nombres para poder ajustarlo.
           if [ -f diagnostico/acta_esquema.txt ]; then cp diagnostico/acta_esquema.txt docs/acta_esquema.txt; else rm -f docs/acta_esquema.txt; fi
+          if [ -f diagnostico/acta_pendiente_esquema.txt ]; then cp diagnostico/acta_pendiente_esquema.txt docs/acta_pendiente_esquema.txt; fi
       - name: Guardar cambios
         run: |
           git config user.name "actualizador-liga"
