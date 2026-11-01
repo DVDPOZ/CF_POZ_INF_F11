@@ -1,12 +1,14 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-01T10:14:33+00:00",
+  "actualizado": "2026-11-01T11:32:52+00:00",
   "ultimos_cambios": [
-    "J4: CLUB DE FUTBOL GETAFE FÉMINAS - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: resultado 4-1",
-    "J4: CLUB DE FUTBOL GETAFE FÉMINAS - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: acta disponible",
-    "Clasificación actualizada",
-    "J4: CLUB DE FUTBOL GETAFE FÉMINAS - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: acta cargada"
+    "J4: A.D. LA MECA DE RIVAS - C.D. LEGANES S.A.D.: resultado retirado (0-4)",
+    "J4: A.D. LA MECA DE RIVAS - C.D. LEGANES S.A.D.: acta modificada",
+    "J4: A.D. LA MECA DE RIVAS - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM",
+    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: resultado retirado (0-4)",
+    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: acta modificada",
+    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -270,12 +272,11 @@
       "hora": "15:45",
       "equipo_local": "A.D. LA MECA DE RIVAS",
       "equipo_visitante": "C.D. LEGANES S.A.D.",
-      "resultado_local": 0,
-      "resultado_visitante": 4,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "RIVAS - CERRO TELÉGRAFO (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700589?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700589",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700589"
     },
     {
       "jornada": 4,
@@ -283,12 +284,11 @@
       "hora": "15:00",
       "equipo_local": "A.D. PIQUEÑAS",
       "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
-      "resultado_local": 0,
-      "resultado_visitante": 4,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "PIQUEÑAS (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5720099?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720099",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5720099"
     },
     {
       "jornada": 4,
