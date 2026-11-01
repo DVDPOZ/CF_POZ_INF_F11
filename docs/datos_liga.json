@@ -1,12 +1,11 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-01T14:43:03+00:00",
+  "actualizado": "2026-11-01T18:35:37+00:00",
   "ultimos_cambios": [
-    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: resultado 0-4",
-    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: acta disponible",
-    "J4: S.A.D. FUNDACION RAYO VALLECANO - C.D. GETAFE FEMENINO 'A': resultado 0-5",
-    "J4: S.A.D. FUNDACION RAYO VALLECANO - C.D. GETAFE FEMENINO 'A': acta disponible"
+    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: resultado retirado (0-4)",
+    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: acta modificada",
+    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -283,12 +282,11 @@
       "hora": "15:00",
       "equipo_local": "A.D. PIQUEÑAS",
       "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
-      "resultado_local": 0,
-      "resultado_visitante": 4,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "PIQUEÑAS (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5720099?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720099",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5720099"
     },
     {
       "jornada": 4,
