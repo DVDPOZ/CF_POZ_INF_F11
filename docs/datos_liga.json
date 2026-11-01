@@ -1,11 +1,10 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-01T20:02:39+00:00",
+  "actualizado": "2026-11-01T20:41:52+00:00",
   "ultimos_cambios": [
-    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: resultado retirado (2-7)",
-    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: acta modificada",
-    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: resultado confirmado en el calendario de la RFFM"
+    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: resultado 2-7",
+    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: acta disponible"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -308,11 +307,12 @@
       "hora": "14:15",
       "equipo_local": "C.D. RIVAS JARAMA",
       "equipo_visitante": "CDE ARANJUEZ CFF",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 2,
+      "resultado_visitante": 7,
       "campo": "RIVAS VACIAMADRID-SUPERA (H.A.)(HA)",
-      "acta": null,
-      "cod_acta": "5700584"
+      "acta": "https://www.rffm.es/acta-partido/5700584?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700584",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 4,
