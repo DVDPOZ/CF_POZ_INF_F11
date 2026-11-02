@@ -1,10 +1,21 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-01T20:41:52+00:00",
+  "actualizado": "2026-11-02T00:50:52+00:00",
   "ultimos_cambios": [
-    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: resultado 2-7",
-    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: acta disponible"
+    "J4: A.D. LA MECA DE RIVAS - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM",
+    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: resultado confirmado en el calendario de la RFFM",
+    "J4: C.D. NUEVO BOADILLA - C.F. POZUELO DE ALARCON: resultado confirmado en el calendario de la RFFM",
+    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: resultado confirmado en el calendario de la RFFM",
+    "J4: C.D.A. NAVALCARNERO - C.D. FUENLABRADA ATLANTIS 'A': resultado confirmado en el calendario de la RFFM",
+    "J4: CLUB DE FUTBOL GETAFE FÉMINAS - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: resultado confirmado en el calendario de la RFFM",
+    "J4: S.A.D. FUNDACION RAYO VALLECANO - C.D. GETAFE FEMENINO 'A': resultado confirmado en el calendario de la RFFM",
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: hora — → 19:00",
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: hora — → 09:00",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: hora — → 15:30",
+    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: fecha 2026-11-07 → 2026-11-08",
+    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: hora — → 10:00",
+    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: campo ARANJUEZ - LAS OLIVAS (HA)(HA) → ARANJUEZ - PVO. LA MONTAÑA (H.A.)(HA)"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -272,8 +283,7 @@
       "resultado_visitante": 4,
       "campo": "RIVAS - CERRO TELÉGRAFO (HA)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700589?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700589",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700589"
     },
     {
       "jornada": 4,
@@ -285,8 +295,7 @@
       "resultado_visitante": 4,
       "campo": "PIQUEÑAS (HA)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5720099?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720099",
-      "resultado_fuente": "acta"
+      "cod_acta": "5720099"
     },
     {
       "jornada": 4,
@@ -298,8 +307,7 @@
       "resultado_visitante": 2,
       "campo": "BOADILLA (CONDESA CHINCHON 2)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700583?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700583",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700583"
     },
     {
       "jornada": 4,
@@ -311,8 +319,7 @@
       "resultado_visitante": 7,
       "campo": "RIVAS VACIAMADRID-SUPERA (H.A.)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700584?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700584",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700584"
     },
     {
       "jornada": 4,
@@ -324,8 +331,7 @@
       "resultado_visitante": 5,
       "campo": "NAVALCARNERO - LOS MANZANOS (HA)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700586?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700586",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700586"
     },
     {
       "jornada": 4,
@@ -337,8 +343,7 @@
       "resultado_visitante": 1,
       "campo": "GETAFE - ALHONDIGA SECTOR III 2 (HA) (HA)",
       "acta": "https://www.rffm.es/acta-partido/5700588?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700588",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700588"
     },
     {
       "jornada": 4,
@@ -350,13 +355,12 @@
       "resultado_visitante": 5,
       "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 3 (HA)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700585?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700585",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700585"
     },
     {
       "jornada": 5,
       "fecha": "2026-11-07",
-      "hora": null,
+      "hora": "19:00",
       "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
       "equipo_visitante": "A.D. LA MECA DE RIVAS",
       "resultado_local": null,
@@ -380,7 +384,7 @@
     {
       "jornada": 5,
       "fecha": "2026-11-07",
-      "hora": null,
+      "hora": "09:00",
       "equipo_local": "C.D. GETAFE FEMENINO 'A'",
       "equipo_visitante": "C.D.A. NAVALCARNERO",
       "resultado_local": null,
@@ -404,7 +408,7 @@
     {
       "jornada": 5,
       "fecha": "2026-11-07",
-      "hora": null,
+      "hora": "15:30",
       "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
       "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
       "resultado_local": null,
@@ -412,18 +416,6 @@
       "campo": "C.D.M. MARQUES DE SAMARANCH (HA)(HA)",
       "acta": null,
       "cod_acta": "5700594"
-    },
-    {
-      "jornada": 5,
-      "fecha": "2026-11-07",
-      "hora": null,
-      "equipo_local": "CDE ARANJUEZ CFF",
-      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "ARANJUEZ - LAS OLIVAS (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700591"
     },
     {
       "jornada": 5,
@@ -436,6 +428,18 @@
       "campo": "BOADILLA (CONDESA CHINCHON 2)(HA)",
       "acta": null,
       "cod_acta": "5700590"
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-08",
+      "hora": "10:00",
+      "equipo_local": "CDE ARANJUEZ CFF",
+      "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "ARANJUEZ - PVO. LA MONTAÑA (H.A.)(HA)",
+      "acta": null,
+      "cod_acta": "5700591"
     },
     {
       "jornada": 6,
