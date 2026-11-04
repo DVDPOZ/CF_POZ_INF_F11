@@ -1,21 +1,11 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-02T00:50:52+00:00",
+  "actualizado": "2026-11-04T09:55:47+00:00",
   "ultimos_cambios": [
-    "J4: A.D. LA MECA DE RIVAS - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM",
-    "J4: A.D. PIQUEÑAS - CDB UNION DEPORTIVA ARGANZUELA: resultado confirmado en el calendario de la RFFM",
-    "J4: C.D. NUEVO BOADILLA - C.F. POZUELO DE ALARCON: resultado confirmado en el calendario de la RFFM",
-    "J4: C.D. RIVAS JARAMA - CDE ARANJUEZ CFF: resultado confirmado en el calendario de la RFFM",
-    "J4: C.D.A. NAVALCARNERO - C.D. FUENLABRADA ATLANTIS 'A': resultado confirmado en el calendario de la RFFM",
-    "J4: CLUB DE FUTBOL GETAFE FÉMINAS - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: resultado confirmado en el calendario de la RFFM",
-    "J4: S.A.D. FUNDACION RAYO VALLECANO - C.D. GETAFE FEMENINO 'A': resultado confirmado en el calendario de la RFFM",
-    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: hora — → 19:00",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: hora — → 09:00",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: hora — → 15:30",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: fecha 2026-11-07 → 2026-11-08",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: hora — → 10:00",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: campo ARANJUEZ - LAS OLIVAS (HA)(HA) → ARANJUEZ - PVO. LA MONTAÑA (H.A.)(HA)"
+    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: fecha 2026-11-07 → 2026-11-08",
+    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: hora — → 19:00",
+    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: campo FUENLABRADA - IRENE FERRERAS (HA)(HA) → FUENLABRADA - EL NARANJO 1 (HA) (HA)"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -372,18 +362,6 @@
     {
       "jornada": 5,
       "fecha": "2026-11-07",
-      "hora": null,
-      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
-      "equipo_visitante": "A.D. PIQUEÑAS",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "FUENLABRADA - IRENE FERRERAS (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5720113"
-    },
-    {
-      "jornada": 5,
-      "fecha": "2026-11-07",
       "hora": "09:00",
       "equipo_local": "C.D. GETAFE FEMENINO 'A'",
       "equipo_visitante": "C.D.A. NAVALCARNERO",
@@ -416,6 +394,18 @@
       "campo": "C.D.M. MARQUES DE SAMARANCH (HA)(HA)",
       "acta": null,
       "cod_acta": "5700594"
+    },
+    {
+      "jornada": 5,
+      "fecha": "2026-11-08",
+      "hora": "19:00",
+      "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "FUENLABRADA - EL NARANJO 1 (HA) (HA)",
+      "acta": null,
+      "cod_acta": "5720113"
     },
     {
       "jornada": 5,
