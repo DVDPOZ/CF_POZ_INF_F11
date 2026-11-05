@@ -1,11 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-04T09:55:47+00:00",
+  "actualizado": "2026-11-05T12:58:07+00:00",
   "ultimos_cambios": [
-    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: fecha 2026-11-07 → 2026-11-08",
-    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: hora — → 19:00",
-    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: campo FUENLABRADA - IRENE FERRERAS (HA)(HA) → FUENLABRADA - EL NARANJO 1 (HA) (HA)"
+    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': hora — → 10:30"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -482,7 +480,7 @@
     {
       "jornada": 6,
       "fecha": "2026-11-14",
-      "hora": null,
+      "hora": "10:30",
       "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
       "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
       "resultado_local": null,
