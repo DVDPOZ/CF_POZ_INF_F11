@@ -1,9 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-05T12:58:07+00:00",
+  "actualizado": "2026-11-05T17:37:01+00:00",
   "ultimos_cambios": [
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': hora — → 10:30"
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: hora — → 11:00"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -432,7 +432,7 @@
     {
       "jornada": 6,
       "fecha": "2026-11-14",
-      "hora": null,
+      "hora": "11:00",
       "equipo_local": "A.D. LA MECA DE RIVAS",
       "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
       "resultado_local": null,
