@@ -1,10 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-06T10:57:26+00:00",
+  "actualizado": "2026-11-06T17:29:24+00:00",
   "ultimos_cambios": [
-    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: hora — → 12:30",
-    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: campo CIUDAD DPTVA. FUND. RAYO VALLECANO 1 (HA)(HA) → CIUDAD DPTVA. FUND. RAYO VALLECANO 3 (HA)(HA)"
+    "J6: C.D. LEGANES S.A.D. - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: hora — → 15:30"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -457,7 +456,7 @@
     {
       "jornada": 6,
       "fecha": "2026-11-14",
-      "hora": null,
+      "hora": "15:30",
       "equipo_local": "C.D. LEGANES S.A.D.",
       "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
       "resultado_local": null,
