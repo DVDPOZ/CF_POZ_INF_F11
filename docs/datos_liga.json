@@ -1,12 +1,12 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-07T10:07:53+00:00",
+  "actualizado": "2026-11-07T16:50:41+00:00",
   "ultimos_cambios": [
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado 14-0",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta disponible",
-    "Clasificación actualizada",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta cargada"
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado retirado (14-0)",
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta modificada",
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado confirmado en el calendario de la RFFM",
+    "Clasificación actualizada"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -366,12 +366,11 @@
       "hora": "09:00",
       "equipo_local": "C.D. GETAFE FEMENINO 'A'",
       "equipo_visitante": "C.D.A. NAVALCARNERO",
-      "resultado_local": 14,
-      "resultado_visitante": 0,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "GETAFE - ALHONDIGA SECTOR III 1 (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700592?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700592",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700592"
     },
     {
       "jornada": 5,
@@ -2222,9 +2221,20 @@
       "gc": 0
     },
     {
+      "equipo": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "puntos": 10,
+      "posicion": 3,
+      "pj": 5,
+      "pg": 3,
+      "pe": 1,
+      "pp": 1,
+      "gf": 14,
+      "gc": 5
+    },
+    {
       "equipo": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
       "puntos": 9,
-      "posicion": 3,
+      "posicion": 4,
       "pj": 4,
       "pg": 3,
       "pe": 0,
@@ -2235,23 +2245,12 @@
     {
       "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
       "puntos": 7,
-      "posicion": 4,
-      "pj": 4,
-      "pg": 2,
-      "pe": 1,
-      "pp": 1,
-      "gf": 15,
-      "gc": 5
-    },
-    {
-      "equipo": "CLUB DE FUTBOL GETAFE FÉMINAS",
-      "puntos": 7,
       "posicion": 5,
       "pj": 4,
       "pg": 2,
       "pe": 1,
       "pp": 1,
-      "gf": 9,
+      "gf": 15,
       "gc": 5
     },
     {
@@ -2291,12 +2290,12 @@
       "equipo": "CDB UNION DEPORTIVA ARGANZUELA",
       "puntos": 6,
       "posicion": 9,
-      "pj": 4,
+      "pj": 5,
       "pg": 2,
       "pe": 0,
-      "pp": 2,
+      "pp": 3,
       "gf": 8,
-      "gc": 16
+      "gc": 21
     },
     {
       "equipo": "A.D. LA MECA DE RIVAS",
