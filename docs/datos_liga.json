@@ -1,14 +1,12 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-07T21:24:07+00:00",
+  "actualizado": "2026-11-07T22:07:02+00:00",
   "ultimos_cambios": [
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado retirado (14-0)",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta modificada",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado confirmado en el calendario de la RFFM",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado retirado (1-4)",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: acta modificada",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM"
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado 14-0",
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta disponible",
+    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado 1-4",
+    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: acta disponible"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -369,11 +367,12 @@
       "hora": "09:00",
       "equipo_local": "C.D. GETAFE FEMENINO 'A'",
       "equipo_visitante": "C.D.A. NAVALCARNERO",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 14,
+      "resultado_visitante": 0,
       "campo": "GETAFE - ALHONDIGA SECTOR III 1 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700592"
+      "acta": "https://www.rffm.es/acta-partido/5700592?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700592",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 5,
@@ -381,11 +380,12 @@
       "hora": "17:50",
       "equipo_local": "C.F. POZUELO DE ALARCON",
       "equipo_visitante": "C.D. LEGANES S.A.D.",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 1,
+      "resultado_visitante": 4,
       "campo": "POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700596"
+      "acta": "https://www.rffm.es/acta-partido/5700596?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700596",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 5,
