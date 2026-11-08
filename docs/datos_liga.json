@@ -1,9 +1,11 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-08T11:45:39+00:00",
+  "actualizado": "2026-11-08T13:26:01+00:00",
   "ultimos_cambios": [
-    "Clasificación actualizada"
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado retirado (2-1)",
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: acta modificada",
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -351,12 +353,11 @@
       "hora": "19:00",
       "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
       "equipo_visitante": "A.D. LA MECA DE RIVAS",
-      "resultado_local": 2,
-      "resultado_visitante": 1,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "ESC. FUT. CARABANCHEL 1 (HA) (HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700595?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700595",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700595"
     },
     {
       "jornada": 5,
