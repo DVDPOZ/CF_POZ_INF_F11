@@ -1,15 +1,10 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-08T16:57:43+00:00",
+  "actualizado": "2026-11-08T17:33:33+00:00",
   "ultimos_cambios": [
-    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado 2-1",
-    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: acta disponible",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado 14-0",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta disponible",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado retirado (0-5)",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: acta modificada",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado confirmado en el calendario de la RFFM"
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado 0-5",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: acta disponible"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -396,11 +391,12 @@
       "hora": "15:30",
       "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
       "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 0,
+      "resultado_visitante": 5,
       "campo": "C.D.M. MARQUES DE SAMARANCH (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700594"
+      "acta": "https://www.rffm.es/acta-partido/5700594?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700594",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 5,
