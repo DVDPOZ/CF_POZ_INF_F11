@@ -1,27 +1,18 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-08T14:59:11+00:00",
+  "actualizado": "2026-11-08T15:34:18+00:00",
   "ultimos_cambios": [
-    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado retirado (2-1)",
-    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: acta modificada",
-    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado confirmado en el calendario de la RFFM",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado retirado (14-0)",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta modificada",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado confirmado en el calendario de la RFFM",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado retirado (1-4)",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: acta modificada",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado retirado (0-5)",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: acta modificada",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado confirmado en el calendario de la RFFM",
-    "J5: C.D. NUEVO BOADILLA - C.D. RIVAS JARAMA: resultado 7-0",
-    "J5: C.D. NUEVO BOADILLA - C.D. RIVAS JARAMA: acta disponible",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: resultado retirado (2-3)",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: acta modificada",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: resultado confirmado en el calendario de la RFFM",
-    "Clasificación actualizada",
-    "J5: C.D. NUEVO BOADILLA - C.D. RIVAS JARAMA: acta cargada"
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado 2-1",
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: acta disponible",
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado 14-0",
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta disponible",
+    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado 1-4",
+    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: acta disponible",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado 0-5",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: acta disponible",
+    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: resultado 2-3",
+    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: acta disponible"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -369,11 +360,12 @@
       "hora": "19:00",
       "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
       "equipo_visitante": "A.D. LA MECA DE RIVAS",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 2,
+      "resultado_visitante": 1,
       "campo": "ESC. FUT. CARABANCHEL 1 (HA) (HA)",
-      "acta": null,
-      "cod_acta": "5700595"
+      "acta": "https://www.rffm.es/acta-partido/5700595?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700595",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 5,
@@ -381,11 +373,12 @@
       "hora": "09:00",
       "equipo_local": "C.D. GETAFE FEMENINO 'A'",
       "equipo_visitante": "C.D.A. NAVALCARNERO",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 14,
+      "resultado_visitante": 0,
       "campo": "GETAFE - ALHONDIGA SECTOR III 1 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700592"
+      "acta": "https://www.rffm.es/acta-partido/5700592?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700592",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 5,
@@ -393,11 +386,12 @@
       "hora": "17:50",
       "equipo_local": "C.F. POZUELO DE ALARCON",
       "equipo_visitante": "C.D. LEGANES S.A.D.",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 1,
+      "resultado_visitante": 4,
       "campo": "POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700596"
+      "acta": "https://www.rffm.es/acta-partido/5700596?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700596",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 5,
@@ -405,11 +399,12 @@
       "hora": "15:30",
       "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
       "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 0,
+      "resultado_visitante": 5,
       "campo": "C.D.M. MARQUES DE SAMARANCH (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700594"
+      "acta": "https://www.rffm.es/acta-partido/5700594?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700594",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 5,
@@ -442,11 +437,12 @@
       "hora": "10:00",
       "equipo_local": "CDE ARANJUEZ CFF",
       "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 2,
+      "resultado_visitante": 3,
       "campo": "ARANJUEZ - PVO. LA MONTAÑA (H.A.)(HA)",
-      "acta": null,
-      "cod_acta": "5700591"
+      "acta": "https://www.rffm.es/acta-partido/5700591?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700591",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 6,
