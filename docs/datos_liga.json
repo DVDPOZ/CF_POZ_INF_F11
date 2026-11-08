@@ -1,14 +1,18 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-08T19:51:44+00:00",
+  "actualizado": "2026-11-08T20:31:12+00:00",
   "ultimos_cambios": [
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado retirado (1-4)",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: acta modificada",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM",
-    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: resultado 12-1",
-    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: acta disponible",
-    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: acta cargada"
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado retirado (2-1)",
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: acta modificada",
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado confirmado en el calendario de la RFFM",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado retirado (0-5)",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: acta modificada",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado confirmado en el calendario de la RFFM",
+    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: resultado retirado (12-1)",
+    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: acta modificada",
+    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: resultado confirmado en el calendario de la RFFM",
+    "Clasificación actualizada"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -356,12 +360,11 @@
       "hora": "19:00",
       "equipo_local": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
       "equipo_visitante": "A.D. LA MECA DE RIVAS",
-      "resultado_local": 2,
-      "resultado_visitante": 1,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "ESC. FUT. CARABANCHEL 1 (HA) (HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700595?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700595",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700595"
     },
     {
       "jornada": 5,
@@ -394,12 +397,11 @@
       "hora": "15:30",
       "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
       "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
-      "resultado_local": 0,
-      "resultado_visitante": 5,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "C.D.M. MARQUES DE SAMARANCH (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700594?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700594",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700594"
     },
     {
       "jornada": 5,
@@ -407,12 +409,11 @@
       "hora": "19:00",
       "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
       "equipo_visitante": "A.D. PIQUEÑAS",
-      "resultado_local": 12,
-      "resultado_visitante": 1,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "FUENLABRADA - EL NARANJO 1 (HA) (HA)",
-      "acta": "https://www.rffm.es/acta-partido/5720113?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720113",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5720113"
     },
     {
       "jornada": 5,
@@ -2240,9 +2241,20 @@
       "gc": 6
     },
     {
-      "equipo": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
       "puntos": 10,
       "posicion": 4,
+      "pj": 5,
+      "pg": 3,
+      "pe": 1,
+      "pp": 1,
+      "gf": 27,
+      "gc": 6
+    },
+    {
+      "equipo": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "puntos": 10,
+      "posicion": 5,
       "pj": 5,
       "pg": 3,
       "pe": 1,
@@ -2253,7 +2265,7 @@
     {
       "equipo": "C.D. NUEVO BOADILLA",
       "puntos": 9,
-      "posicion": 5,
+      "posicion": 6,
       "pj": 5,
       "pg": 2,
       "pe": 3,
@@ -2264,24 +2276,13 @@
     {
       "equipo": "S.A.D. FUNDACION RAYO VALLECANO",
       "puntos": 9,
-      "posicion": 6,
+      "posicion": 7,
       "pj": 5,
       "pg": 3,
       "pe": 0,
       "pp": 2,
       "gf": 15,
       "gc": 12
-    },
-    {
-      "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
-      "puntos": 7,
-      "posicion": 7,
-      "pj": 4,
-      "pg": 2,
-      "pe": 1,
-      "pp": 1,
-      "gf": 15,
-      "gc": 5
     },
     {
       "equipo": "C.F. POZUELO DE ALARCON",
@@ -2353,12 +2354,12 @@
       "equipo": "A.D. PIQUEÑAS",
       "puntos": 0,
       "posicion": 14,
-      "pj": 4,
+      "pj": 5,
       "pg": 0,
       "pe": 0,
-      "pp": 4,
-      "gf": 0,
-      "gc": 40
+      "pp": 5,
+      "gf": 1,
+      "gc": 52
     }
   ],
   "escudos": {
