@@ -1,11 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-08T11:02:31+00:00",
+  "actualizado": "2026-11-08T11:45:39+00:00",
   "ultimos_cambios": [
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: resultado 2-3",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: acta disponible",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: acta cargada"
+    "Clasificación actualizada"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -2247,9 +2245,20 @@
       "gc": 5
     },
     {
+      "equipo": "S.A.D. FUNDACION RAYO VALLECANO",
+      "puntos": 9,
+      "posicion": 5,
+      "pj": 5,
+      "pg": 3,
+      "pe": 0,
+      "pp": 2,
+      "gf": 15,
+      "gc": 12
+    },
+    {
       "equipo": "C.D. FUENLABRADA ATLANTIS 'A'",
       "puntos": 7,
-      "posicion": 5,
+      "posicion": 6,
       "pj": 4,
       "pg": 2,
       "pe": 1,
@@ -2260,23 +2269,12 @@
     {
       "equipo": "C.F. POZUELO DE ALARCON",
       "puntos": 7,
-      "posicion": 6,
+      "posicion": 7,
       "pj": 5,
       "pg": 2,
       "pe": 1,
       "pp": 2,
       "gf": 8,
-      "gc": 10
-    },
-    {
-      "equipo": "S.A.D. FUNDACION RAYO VALLECANO",
-      "puntos": 6,
-      "posicion": 7,
-      "pj": 4,
-      "pg": 2,
-      "pe": 0,
-      "pp": 2,
-      "gf": 12,
       "gc": 10
     },
     {
@@ -2316,12 +2314,12 @@
       "equipo": "CDE ARANJUEZ CFF",
       "puntos": 3,
       "posicion": 11,
-      "pj": 4,
+      "pj": 5,
       "pg": 1,
       "pe": 0,
-      "pp": 3,
-      "gf": 8,
-      "gc": 15
+      "pp": 4,
+      "gf": 10,
+      "gc": 18
     },
     {
       "equipo": "C.D.A. NAVALCARNERO",
