@@ -1,10 +1,19 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-08T23:53:24+00:00",
+  "actualizado": "2026-11-09T00:53:20+00:00",
   "ultimos_cambios": [
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado 14-0",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: acta disponible"
+    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado confirmado en el calendario de la RFFM",
+    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado confirmado en el calendario de la RFFM",
+    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM",
+    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado confirmado en el calendario de la RFFM",
+    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: resultado confirmado en el calendario de la RFFM",
+    "J5: C.D. NUEVO BOADILLA - C.D. RIVAS JARAMA: resultado confirmado en el calendario de la RFFM",
+    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: resultado confirmado en el calendario de la RFFM",
+    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': hora — → 10:30",
+    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: hora — → 14:00",
+    "J6: C.D. LEGANES S.A.D. - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: fecha 2026-11-14 → 2026-11-15",
+    "J6: C.D. LEGANES S.A.D. - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: hora 15:30 → 18:00"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -356,8 +365,7 @@
       "resultado_visitante": 1,
       "campo": "ESC. FUT. CARABANCHEL 1 (HA) (HA)",
       "acta": "https://www.rffm.es/acta-partido/5700595?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700595",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700595"
     },
     {
       "jornada": 5,
@@ -369,8 +377,7 @@
       "resultado_visitante": 0,
       "campo": "GETAFE - ALHONDIGA SECTOR III 1 (HA)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700592?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700592",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700592"
     },
     {
       "jornada": 5,
@@ -382,8 +389,7 @@
       "resultado_visitante": 4,
       "campo": "POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700596?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700596",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700596"
     },
     {
       "jornada": 5,
@@ -395,8 +401,7 @@
       "resultado_visitante": 5,
       "campo": "C.D.M. MARQUES DE SAMARANCH (HA)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700594?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700594",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700594"
     },
     {
       "jornada": 5,
@@ -408,8 +413,7 @@
       "resultado_visitante": 1,
       "campo": "FUENLABRADA - EL NARANJO 1 (HA) (HA)",
       "acta": "https://www.rffm.es/acta-partido/5720113?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720113",
-      "resultado_fuente": "acta"
+      "cod_acta": "5720113"
     },
     {
       "jornada": 5,
@@ -421,8 +425,7 @@
       "resultado_visitante": 0,
       "campo": "BOADILLA (CONDESA CHINCHON 2)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700590?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700590",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700590"
     },
     {
       "jornada": 5,
@@ -434,8 +437,7 @@
       "resultado_visitante": 3,
       "campo": "ARANJUEZ - PVO. LA MONTAÑA (H.A.)(HA)",
       "acta": "https://www.rffm.es/acta-partido/5700591?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700591",
-      "resultado_fuente": "acta"
+      "cod_acta": "5700591"
     },
     {
       "jornada": 6,
@@ -452,7 +454,7 @@
     {
       "jornada": 6,
       "fecha": "2026-11-14",
-      "hora": null,
+      "hora": "10:30",
       "equipo_local": "A.D. PIQUEÑAS",
       "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
       "resultado_local": null,
@@ -464,19 +466,7 @@
     {
       "jornada": 6,
       "fecha": "2026-11-14",
-      "hora": "15:30",
-      "equipo_local": "C.D. LEGANES S.A.D.",
-      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "LEGANES - ANEXO ESTADIO BUTARQUE JESUS POLO (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700603"
-    },
-    {
-      "jornada": 6,
-      "fecha": "2026-11-14",
-      "hora": null,
+      "hora": "14:00",
       "equipo_local": "C.D.A. NAVALCARNERO",
       "equipo_visitante": "CDE ARANJUEZ CFF",
       "resultado_local": null,
@@ -508,6 +498,18 @@
       "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 3 (HA)(HA)",
       "acta": null,
       "cod_acta": "5700598"
+    },
+    {
+      "jornada": 6,
+      "fecha": "2026-11-15",
+      "hora": "18:00",
+      "equipo_local": "C.D. LEGANES S.A.D.",
+      "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "LEGANES - ANEXO ESTADIO BUTARQUE JESUS POLO (HA)(HA)",
+      "acta": null,
+      "cod_acta": "5700603"
     },
     {
       "jornada": 6,
