@@ -1,19 +1,11 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-09T00:53:20+00:00",
+  "actualizado": "2026-11-09T11:36:55+00:00",
   "ultimos_cambios": [
-    "J5: A.D. ESCUELA DE FUTBOL DE CARABANCHEL - A.D. LA MECA DE RIVAS: resultado confirmado en el calendario de la RFFM",
-    "J5: C.D. GETAFE FEMENINO 'A' - C.D.A. NAVALCARNERO: resultado confirmado en el calendario de la RFFM",
-    "J5: C.F. POZUELO DE ALARCON - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM",
-    "J5: CDB UNION DEPORTIVA ARGANZUELA - CLUB DE FUTBOL GETAFE FÉMINAS: resultado confirmado en el calendario de la RFFM",
-    "J5: C.D. FUENLABRADA ATLANTIS 'A' - A.D. PIQUEÑAS: resultado confirmado en el calendario de la RFFM",
-    "J5: C.D. NUEVO BOADILLA - C.D. RIVAS JARAMA: resultado confirmado en el calendario de la RFFM",
-    "J5: CDE ARANJUEZ CFF - S.A.D. FUNDACION RAYO VALLECANO: resultado confirmado en el calendario de la RFFM",
-    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': hora — → 10:30",
-    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: hora — → 14:00",
-    "J6: C.D. LEGANES S.A.D. - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: fecha 2026-11-14 → 2026-11-15",
-    "J6: C.D. LEGANES S.A.D. - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: hora 15:30 → 18:00"
+    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: fecha 2026-12-12 → 2026-12-13",
+    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: hora — → 09:10",
+    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: campo POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA) → POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -743,18 +735,6 @@
       "jornada": 9,
       "fecha": "2026-12-12",
       "hora": null,
-      "equipo_local": "C.F. POZUELO DE ALARCON",
-      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700624"
-    },
-    {
-      "jornada": 9,
-      "fecha": "2026-12-12",
-      "hora": null,
       "equipo_local": "CDE ARANJUEZ CFF",
       "equipo_visitante": "A.D. LA MECA DE RIVAS",
       "resultado_local": null,
@@ -774,6 +754,18 @@
       "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 1 (HA)(HA)",
       "acta": null,
       "cod_acta": "5700618"
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-13",
+      "hora": "09:10",
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
+      "acta": null,
+      "cod_acta": "5700624"
     },
     {
       "jornada": 10,
