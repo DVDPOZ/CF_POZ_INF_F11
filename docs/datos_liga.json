@@ -1,11 +1,14 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-09T11:36:55+00:00",
+  "actualizado": "2026-11-09T13:56:19+00:00",
   "ultimos_cambios": [
-    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: fecha 2026-12-12 → 2026-12-13",
-    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: hora — → 09:10",
-    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: campo POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA) → POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)"
+    "J11: C.F. POZUELO DE ALARCON - C.D. FUENLABRADA ATLANTIS 'A': fecha 2027-01-16 → 2027-01-17",
+    "J11: C.F. POZUELO DE ALARCON - C.D. FUENLABRADA ATLANTIS 'A': hora — → 09:10",
+    "J11: C.F. POZUELO DE ALARCON - C.D. FUENLABRADA ATLANTIS 'A': campo POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA) → POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
+    "J12: C.F. POZUELO DE ALARCON - A.D. PIQUEÑAS: fecha 2027-01-23 → 2027-01-24",
+    "J12: C.F. POZUELO DE ALARCON - A.D. PIQUEÑAS: hora — → 10:40",
+    "J12: C.F. POZUELO DE ALARCON - A.D. PIQUEÑAS: campo POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA) → POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -903,18 +906,6 @@
       "jornada": 11,
       "fecha": "2027-01-16",
       "hora": null,
-      "equipo_local": "C.F. POZUELO DE ALARCON",
-      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700638"
-    },
-    {
-      "jornada": 11,
-      "fecha": "2027-01-16",
-      "hora": null,
       "equipo_local": "CDE ARANJUEZ CFF",
       "equipo_visitante": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
       "resultado_local": null,
@@ -934,6 +925,18 @@
       "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 1 (HA)(HA)",
       "acta": null,
       "cod_acta": "5700633"
+    },
+    {
+      "jornada": 11,
+      "fecha": "2027-01-17",
+      "hora": "09:10",
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
+      "acta": null,
+      "cod_acta": "5700638"
     },
     {
       "jornada": 12,
@@ -987,18 +990,6 @@
       "jornada": 12,
       "fecha": "2027-01-23",
       "hora": null,
-      "equipo_local": "C.F. POZUELO DE ALARCON",
-      "equipo_visitante": "A.D. PIQUEÑAS",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5720117"
-    },
-    {
-      "jornada": 12,
-      "fecha": "2027-01-23",
-      "hora": null,
       "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
       "equipo_visitante": "CDE ARANJUEZ CFF",
       "resultado_local": null,
@@ -1018,6 +1009,18 @@
       "campo": "GETAFE - ALHONDIGA SECTOR III 1 (HA)(HA)",
       "acta": null,
       "cod_acta": "5700640"
+    },
+    {
+      "jornada": 12,
+      "fecha": "2027-01-24",
+      "hora": "10:40",
+      "equipo_local": "C.F. POZUELO DE ALARCON",
+      "equipo_visitante": "A.D. PIQUEÑAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
+      "acta": null,
+      "cod_acta": "5720117"
     },
     {
       "jornada": 13,
