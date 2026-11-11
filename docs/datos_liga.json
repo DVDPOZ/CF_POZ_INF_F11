@@ -1,14 +1,11 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-09T13:56:19+00:00",
+  "actualizado": "2026-11-11T10:58:55+00:00",
   "ultimos_cambios": [
-    "J11: C.F. POZUELO DE ALARCON - C.D. FUENLABRADA ATLANTIS 'A': fecha 2027-01-16 → 2027-01-17",
-    "J11: C.F. POZUELO DE ALARCON - C.D. FUENLABRADA ATLANTIS 'A': hora — → 09:10",
-    "J11: C.F. POZUELO DE ALARCON - C.D. FUENLABRADA ATLANTIS 'A': campo POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA) → POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
-    "J12: C.F. POZUELO DE ALARCON - A.D. PIQUEÑAS: fecha 2027-01-23 → 2027-01-24",
-    "J12: C.F. POZUELO DE ALARCON - A.D. PIQUEÑAS: hora — → 10:40",
-    "J12: C.F. POZUELO DE ALARCON - A.D. PIQUEÑAS: campo POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA) → POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)"
+    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: fecha 2026-11-21 → 2026-11-22",
+    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: hora — → 13:00",
+    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: campo BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA) (HA) → BOADILLA (CONDESA CHINCHON 2)(HA)"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -545,18 +542,6 @@
     {
       "jornada": 7,
       "fecha": "2026-11-21",
-      "hora": null,
-      "equipo_local": "C.D. NUEVO BOADILLA",
-      "equipo_visitante": "C.D.A. NAVALCARNERO",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA) (HA)",
-      "acta": null,
-      "cod_acta": "5700605"
-    },
-    {
-      "jornada": 7,
-      "fecha": "2026-11-21",
       "hora": "14:15",
       "equipo_local": "C.D. RIVAS JARAMA",
       "equipo_visitante": "S.A.D. FUNDACION RAYO VALLECANO",
@@ -589,6 +574,18 @@
       "campo": "ARANJUEZ - LAS OLIVAS (HA)(HA)",
       "acta": null,
       "cod_acta": "5720114"
+    },
+    {
+      "jornada": 7,
+      "fecha": "2026-11-22",
+      "hora": "13:00",
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "C.D.A. NAVALCARNERO",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "BOADILLA (CONDESA CHINCHON 2)(HA)",
+      "acta": null,
+      "cod_acta": "5700605"
     },
     {
       "jornada": 7,
