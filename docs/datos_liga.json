@@ -1,11 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-11T10:58:55+00:00",
+  "actualizado": "2026-11-12T11:13:22+00:00",
   "ultimos_cambios": [
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: fecha 2026-11-21 → 2026-11-22",
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: hora — → 13:00",
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: campo BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA) (HA) → BOADILLA (CONDESA CHINCHON 2)(HA)"
+    "J8: CLUB DE FUTBOL GETAFE FÉMINAS - CDE ARANJUEZ CFF: hora — → 10:30"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -662,7 +660,7 @@
     {
       "jornada": 8,
       "fecha": "2026-11-28",
-      "hora": null,
+      "hora": "10:30",
       "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
       "equipo_visitante": "CDE ARANJUEZ CFF",
       "resultado_local": null,
