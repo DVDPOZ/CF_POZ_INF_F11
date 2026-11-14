@@ -1,12 +1,17 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-14T15:00:16+00:00",
+  "actualizado": "2026-11-14T16:20:26+00:00",
   "ultimos_cambios": [
-    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: resultado 1-4",
-    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: acta disponible",
-    "Clasificación actualizada",
-    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: acta cargada"
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: resultado retirado (3-1)",
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: acta modificada",
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: resultado confirmado en el calendario de la RFFM",
+    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': resultado retirado (0-19)",
+    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': acta modificada",
+    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': resultado confirmado en el calendario de la RFFM",
+    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: resultado retirado (1-4)",
+    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: acta modificada",
+    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -438,12 +443,11 @@
       "hora": "11:00",
       "equipo_local": "A.D. LA MECA DE RIVAS",
       "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
-      "resultado_local": 3,
-      "resultado_visitante": 1,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "RIVAS - CERRO TELÉGRAFO (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700602?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700602",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700602"
     },
     {
       "jornada": 6,
@@ -451,12 +455,11 @@
       "hora": "10:30",
       "equipo_local": "A.D. PIQUEÑAS",
       "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
-      "resultado_local": 0,
-      "resultado_visitante": 19,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "PIQUEÑAS (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5720100?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720100",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5720100"
     },
     {
       "jornada": 6,
@@ -464,12 +467,11 @@
       "hora": "14:00",
       "equipo_local": "C.D.A. NAVALCARNERO",
       "equipo_visitante": "CDE ARANJUEZ CFF",
-      "resultado_local": 1,
-      "resultado_visitante": 4,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "NAVALCARNERO - EL PINAR 2 (H.A.) (HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700599?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700599",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700599"
     },
     {
       "jornada": 6,
