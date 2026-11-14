@@ -1,15 +1,15 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-14T17:03:09+00:00",
+  "actualizado": "2026-11-14T17:42:36+00:00",
   "ultimos_cambios": [
-    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: resultado 3-1",
-    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: acta disponible",
-    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': resultado 0-19",
-    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': acta disponible",
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': resultado retirado (2-0)",
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': acta modificada",
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': resultado confirmado en el calendario de la RFFM"
+    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': resultado retirado (0-19)",
+    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': acta modificada",
+    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': resultado confirmado en el calendario de la RFFM",
+    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: resultado 1-4",
+    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: acta disponible",
+    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': resultado 2-0",
+    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': acta disponible"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -454,12 +454,11 @@
       "hora": "10:30",
       "equipo_local": "A.D. PIQUEÑAS",
       "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
-      "resultado_local": 0,
-      "resultado_visitante": 19,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "PIQUEÑAS (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5720100?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720100",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5720100"
     },
     {
       "jornada": 6,
@@ -467,11 +466,12 @@
       "hora": "14:00",
       "equipo_local": "C.D.A. NAVALCARNERO",
       "equipo_visitante": "CDE ARANJUEZ CFF",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 1,
+      "resultado_visitante": 4,
       "campo": "NAVALCARNERO - EL PINAR 2 (H.A.) (HA)",
-      "acta": null,
-      "cod_acta": "5700599"
+      "acta": "https://www.rffm.es/acta-partido/5700599?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700599",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 6,
@@ -479,11 +479,12 @@
       "hora": "10:30",
       "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
       "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 2,
+      "resultado_visitante": 0,
       "campo": "GETAFE - ALHONDIGA SECTOR III 1 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700601"
+      "acta": "https://www.rffm.es/acta-partido/5700601?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700601",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 6,
