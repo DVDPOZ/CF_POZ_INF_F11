@@ -1,13 +1,13 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-14T18:21:36+00:00",
+  "actualizado": "2026-11-14T19:18:46+00:00",
   "ultimos_cambios": [
-    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': resultado 0-19",
-    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': acta disponible",
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': resultado retirado (2-0)",
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': acta modificada",
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': resultado confirmado en el calendario de la RFFM"
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: resultado retirado (3-1)",
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: acta modificada",
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: resultado confirmado en el calendario de la RFFM",
+    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': resultado 2-0",
+    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': acta disponible"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -439,12 +439,11 @@
       "hora": "11:00",
       "equipo_local": "A.D. LA MECA DE RIVAS",
       "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
-      "resultado_local": 3,
-      "resultado_visitante": 1,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "RIVAS - CERRO TELÉGRAFO (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700602?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700602",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700602"
     },
     {
       "jornada": 6,
@@ -478,11 +477,12 @@
       "hora": "10:30",
       "equipo_local": "CLUB DE FUTBOL GETAFE FÉMINAS",
       "equipo_visitante": "C.D. FUENLABRADA ATLANTIS 'A'",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 2,
+      "resultado_visitante": 0,
       "campo": "GETAFE - ALHONDIGA SECTOR III 1 (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700601"
+      "acta": "https://www.rffm.es/acta-partido/5700601?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700601",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 6,
