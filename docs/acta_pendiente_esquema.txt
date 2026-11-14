@@ -123,8 +123,67 @@ global:
     provider_metadata: NoneType = None
     created_at: str = <texto de 24 car.>
     updated_at: str = <texto de 24 car.>
-game: NoneType = None
-seasonName: str = <texto de 0 car.>
+game:
+  estado: str = <texto de 1 car.>
+  sesion_ok: str = <texto de 1 car.>
+  codacta: str = <texto de 7 car.>
+  nombre_competicion: str = <texto de 21 car.>
+  nombre_grupo: str = <texto de 7 car.>
+  jornada: str = <texto de 1 car.>
+  fecha: str = <texto de 10 car.>
+  hora: str = <texto de 5 car.>
+  campo: str = <texto de 28 car.>
+  codigo_campo: str = <texto de 4 car.>
+  acta_cerrada: str = <texto de 1 car.>
+  partido_en_juego: str = <texto de 1 car.>
+  codigo_equipo_local: str = <texto de 8 car.>
+  esquema_local: str = <texto de 0 car.>
+  equipo_local: str = <texto de 22 car.>
+  escudo_local: str = <texto de 67 car.>
+  goles_local: str = <texto de 0 car.>
+  codigo_equipo_visitante: str = <texto de 8 car.>
+  esquema_visitante: str = <texto de 0 car.>
+  equipo_visitante: str = <texto de 31 car.>
+  escudo_visitante: str = <texto de 49 car.>
+  goles_visitante: str = <texto de 0 car.>
+  hay_penaltis: str = <texto de 0 car.>
+  penaltis_casa: str = <texto de 0 car.>
+  penaltis_fuera: str = <texto de 0 car.>
+  suspendido: str = <texto de 1 car.>
+  codacta_origen: str = <texto de 0 car.>
+  goles_penalti [0]:
+  goles_equipo_local [0]:
+  goles_equipo_visitante [0]:
+  foto_delegadocampo: str = <texto de 0 car.>
+  delegadocampo: str = <texto de 0 car.>
+  foto_delegadolocal: str = <texto de 0 car.>
+  delegadolocal: str = <texto de 0 car.>
+  foto_entrenador_local: str = <texto de 0 car.>
+  cod_entrenador_local: str = <texto de 0 car.>
+  entrenador_local: str = <texto de 11 car.>
+  foto_entrenador2_local: str = <texto de 0 car.>
+  cod_entrenador2_local: str = <texto de 0 car.>
+  entrenador2_local: str = <texto de 0 car.>
+  otros_tecnicos_local [0]:
+  jugadores_equipo_local [0]:
+  foto_delegado_visitante: str = <texto de 0 car.>
+  delegado_visitante: str = <texto de 0 car.>
+  foto_entrenador_visitante: str = <texto de 0 car.>
+  cod_entrenador_visitante: str = <texto de 0 car.>
+  entrenador_visitante: str = <texto de 11 car.>
+  foto_entrenador_visitante2: str = <texto de 0 car.>
+  cod_entrenador_visitante2: str = <texto de 0 car.>
+  entrenador2_visitante: str = <texto de 0 car.>
+  otros_tecnicos_visitante [0]:
+  jugadores_equipo_visitante [0]:
+  sustituciones_equipo_local [0]:
+  sustituciones_equipo_visitante [0]:
+  tarjetas_equipo_local [0]:
+  tarjetas_equipo_visitante [0]:
+  otras_tarjetas [0]:
+  arbitros_partido [0]:
+  host: str = <texto de 23 car.>
+seasonName: str = <texto de 9 car.>
 notices [9]:
   (elemento más completo de 9; claves vistas: id, aaa, published_at, created_at, updated_at, title, link)
   id: int = 97
