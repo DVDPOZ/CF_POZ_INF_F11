@@ -1,13 +1,16 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-15T18:06:14+00:00",
+  "actualizado": "2026-11-15T18:51:16+00:00",
   "ultimos_cambios": [
-    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: resultado 1-0",
-    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: acta disponible",
-    "J6: C.D. RIVAS JARAMA - C.F. POZUELO DE ALARCON: resultado 0-3",
-    "J6: C.D. RIVAS JARAMA - C.F. POZUELO DE ALARCON: acta disponible",
-    "Clasificación actualizada"
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: resultado 3-1",
+    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: acta disponible",
+    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: resultado retirado (1-0)",
+    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: acta modificada",
+    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: resultado confirmado en el calendario de la RFFM",
+    "J6: C.D. RIVAS JARAMA - C.F. POZUELO DE ALARCON: resultado retirado (0-3)",
+    "J6: C.D. RIVAS JARAMA - C.F. POZUELO DE ALARCON: acta modificada",
+    "J6: C.D. RIVAS JARAMA - C.F. POZUELO DE ALARCON: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -439,11 +442,12 @@
       "hora": "11:00",
       "equipo_local": "A.D. LA MECA DE RIVAS",
       "equipo_visitante": "CDB UNION DEPORTIVA ARGANZUELA",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 3,
+      "resultado_visitante": 1,
       "campo": "RIVAS - CERRO TELÉGRAFO (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700602"
+      "acta": "https://www.rffm.es/acta-partido/5700602?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700602",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 6,
@@ -487,12 +491,11 @@
       "hora": "12:30",
       "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
       "equipo_visitante": "C.D. NUEVO BOADILLA",
-      "resultado_local": 1,
-      "resultado_visitante": 0,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 3 (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700598?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700598",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700598"
     },
     {
       "jornada": 6,
@@ -512,12 +515,11 @@
       "hora": "10:45",
       "equipo_local": "C.D. RIVAS JARAMA",
       "equipo_visitante": "C.F. POZUELO DE ALARCON",
-      "resultado_local": 0,
-      "resultado_visitante": 3,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "RIVAS VACIAMADRID-SUPERA (H.A.)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700597?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700597",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700597"
     },
     {
       "jornada": 7,
