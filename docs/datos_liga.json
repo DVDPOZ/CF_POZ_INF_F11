@@ -1,26 +1,11 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-16T00:38:34+00:00",
+  "actualizado": "2026-11-18T21:37:30+00:00",
   "ultimos_cambios": [
-    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: hora 11:00 → 11:20",
-    "J6: A.D. LA MECA DE RIVAS - CDB UNION DEPORTIVA ARGANZUELA: resultado confirmado en el calendario de la RFFM",
-    "J6: A.D. PIQUEÑAS - C.D. GETAFE FEMENINO 'A': resultado confirmado en el calendario de la RFFM",
-    "J6: C.D.A. NAVALCARNERO - CDE ARANJUEZ CFF: resultado confirmado en el calendario de la RFFM",
-    "J6: CLUB DE FUTBOL GETAFE FÉMINAS - C.D. FUENLABRADA ATLANTIS 'A': resultado confirmado en el calendario de la RFFM",
-    "J6: S.A.D. FUNDACION RAYO VALLECANO - C.D. NUEVO BOADILLA: resultado confirmado en el calendario de la RFFM",
-    "J6: C.D. LEGANES S.A.D. - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: resultado confirmado en el calendario de la RFFM",
-    "J6: C.D. RIVAS JARAMA - C.F. POZUELO DE ALARCON: resultado confirmado en el calendario de la RFFM",
-    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: hora — → 15:15",
-    "J7: C.D. GETAFE FEMENINO 'A' - CLUB DE FUTBOL GETAFE FÉMINAS: hora — → 10:30",
-    "J7: C.D. RIVAS JARAMA - S.A.D. FUNDACION RAYO VALLECANO: hora 14:15 → 10:45",
-    "J7: C.F. POZUELO DE ALARCON - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: fecha 2026-11-22 → 2026-11-21",
-    "J7: C.F. POZUELO DE ALARCON - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: hora 18:00 → 17:50",
-    "J7: C.F. POZUELO DE ALARCON - A.D. ESCUELA DE FUTBOL DE CARABANCHEL: campo POZUELO - VALLE DE LAS CAÑAS 1 (HA)(HA) → POZUELO - VALLE DE LAS CAÑAS 2 (HA)(HA)",
-    "J7: CDB UNION DEPORTIVA ARGANZUELA - C.D. LEGANES S.A.D.: hora — → 15:00",
-    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: fecha 2026-11-21 → 2026-11-22",
-    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: hora — → 10:00",
-    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: campo ARANJUEZ - LAS OLIVAS (HA)(HA) → ARANJUEZ - PVO. LA MONTAÑA (H.A.)(HA)"
+    "J9: C.D. NUEVO BOADILLA - CLUB DE FUTBOL GETAFE FÉMINAS: fecha 2026-12-12 → 2026-12-13",
+    "J9: C.D. NUEVO BOADILLA - CLUB DE FUTBOL GETAFE FÉMINAS: hora — → 09:00",
+    "J9: C.D. NUEVO BOADILLA - CLUB DE FUTBOL GETAFE FÉMINAS: campo BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA) (HA) → BOADILLA - PVO. MUNICIPAL ANGEL NIETO 3 (HA)(HA)"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -726,18 +711,6 @@
       "jornada": 9,
       "fecha": "2026-12-12",
       "hora": null,
-      "equipo_local": "C.D. NUEVO BOADILLA",
-      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
-      "resultado_local": null,
-      "resultado_visitante": null,
-      "campo": "BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA) (HA)",
-      "acta": null,
-      "cod_acta": "5700620"
-    },
-    {
-      "jornada": 9,
-      "fecha": "2026-12-12",
-      "hora": null,
       "equipo_local": "C.D. RIVAS JARAMA",
       "equipo_visitante": "A.D. PIQUEÑAS",
       "resultado_local": null,
@@ -769,6 +742,18 @@
       "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 1 (HA)(HA)",
       "acta": null,
       "cod_acta": "5700618"
+    },
+    {
+      "jornada": 9,
+      "fecha": "2026-12-13",
+      "hora": "09:00",
+      "equipo_local": "C.D. NUEVO BOADILLA",
+      "equipo_visitante": "CLUB DE FUTBOL GETAFE FÉMINAS",
+      "resultado_local": null,
+      "resultado_visitante": null,
+      "campo": "BOADILLA - PVO. MUNICIPAL ANGEL NIETO 3 (HA)(HA)",
+      "acta": null,
+      "cod_acta": "5700620"
     },
     {
       "jornada": 9,
