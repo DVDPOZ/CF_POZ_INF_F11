@@ -1,11 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-18T21:37:30+00:00",
+  "actualizado": "2026-11-19T16:49:35+00:00",
   "ultimos_cambios": [
-    "J9: C.D. NUEVO BOADILLA - CLUB DE FUTBOL GETAFE FÉMINAS: fecha 2026-12-12 → 2026-12-13",
-    "J9: C.D. NUEVO BOADILLA - CLUB DE FUTBOL GETAFE FÉMINAS: hora — → 09:00",
-    "J9: C.D. NUEVO BOADILLA - CLUB DE FUTBOL GETAFE FÉMINAS: campo BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA) (HA) → BOADILLA - PVO. MUNICIPAL ANGEL NIETO 3 (HA)(HA)"
+    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': hora — → 09:15"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -614,7 +612,7 @@
     {
       "jornada": 8,
       "fecha": "2026-11-28",
-      "hora": null,
+      "hora": "09:15",
       "equipo_local": "A.D. LA MECA DE RIVAS",
       "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
       "resultado_local": null,
