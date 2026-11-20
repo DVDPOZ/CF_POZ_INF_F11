@@ -1,9 +1,10 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-19T16:49:35+00:00",
+  "actualizado": "2026-11-20T12:19:50+00:00",
   "ultimos_cambios": [
-    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': hora — → 09:15"
+    "J8: S.A.D. FUNDACION RAYO VALLECANO - C.F. POZUELO DE ALARCON: hora — → 12:00",
+    "J8: S.A.D. FUNDACION RAYO VALLECANO - C.F. POZUELO DE ALARCON: campo CIUDAD DPTVA. FUND. RAYO VALLECANO 1 (HA)(HA) → CIUDAD DPTVA. FUND. RAYO VALLECANO 3 (HA)(HA)"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -672,12 +673,12 @@
     {
       "jornada": 8,
       "fecha": "2026-11-28",
-      "hora": null,
+      "hora": "12:00",
       "equipo_local": "S.A.D. FUNDACION RAYO VALLECANO",
       "equipo_visitante": "C.F. POZUELO DE ALARCON",
       "resultado_local": null,
       "resultado_visitante": null,
-      "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 1 (HA)(HA)",
+      "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 3 (HA)(HA)",
       "acta": null,
       "cod_acta": "5700611"
     },
