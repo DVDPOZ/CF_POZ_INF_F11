@@ -1,13 +1,14 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-21T17:20:08+00:00",
+  "actualizado": "2026-11-21T18:02:37+00:00",
   "ultimos_cambios": [
-    "J7: C.D. GETAFE FEMENINO 'A' - CLUB DE FUTBOL GETAFE FÉMINAS: resultado 2-0",
-    "J7: C.D. GETAFE FEMENINO 'A' - CLUB DE FUTBOL GETAFE FÉMINAS: acta disponible",
-    "J7: CDB UNION DEPORTIVA ARGANZUELA - C.D. LEGANES S.A.D.: resultado 0-10",
-    "J7: CDB UNION DEPORTIVA ARGANZUELA - C.D. LEGANES S.A.D.: acta disponible",
-    "J7: CDB UNION DEPORTIVA ARGANZUELA - C.D. LEGANES S.A.D.: acta cargada"
+    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: resultado retirado (1-2)",
+    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: acta modificada",
+    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: resultado confirmado en el calendario de la RFFM",
+    "J7: CDB UNION DEPORTIVA ARGANZUELA - C.D. LEGANES S.A.D.: resultado retirado (0-10)",
+    "J7: CDB UNION DEPORTIVA ARGANZUELA - C.D. LEGANES S.A.D.: acta modificada",
+    "J7: CDB UNION DEPORTIVA ARGANZUELA - C.D. LEGANES S.A.D.: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -523,12 +524,11 @@
       "hora": "15:15",
       "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
       "equipo_visitante": "A.D. LA MECA DE RIVAS",
-      "resultado_local": 1,
-      "resultado_visitante": 2,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "FUENLABRADA - IRENE FERRERAS (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700608?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700608",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700608"
     },
     {
       "jornada": 7,
@@ -574,12 +574,11 @@
       "hora": "15:00",
       "equipo_local": "CDB UNION DEPORTIVA ARGANZUELA",
       "equipo_visitante": "C.D. LEGANES S.A.D.",
-      "resultado_local": 0,
-      "resultado_visitante": 10,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "C.D.M. MARQUES DE SAMARANCH (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700609?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700609",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700609"
     },
     {
       "jornada": 7,
