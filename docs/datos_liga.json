@@ -1,12 +1,11 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-22T13:54:06+00:00",
+  "actualizado": "2026-11-22T16:22:44+00:00",
   "ultimos_cambios": [
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: resultado 5-0",
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: acta disponible",
-    "Clasificación actualizada",
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: acta cargada"
+    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: resultado retirado (6-0)",
+    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: acta modificada",
+    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -600,12 +599,11 @@
       "hora": "10:00",
       "equipo_local": "CDE ARANJUEZ CFF",
       "equipo_visitante": "A.D. PIQUEÑAS",
-      "resultado_local": 6,
-      "resultado_visitante": 0,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "ARANJUEZ - PVO. LA MONTAÑA (H.A.)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5720114?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720114",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5720114"
     },
     {
       "jornada": 8,
