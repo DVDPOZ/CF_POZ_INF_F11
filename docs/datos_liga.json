@@ -1,16 +1,12 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-22T17:16:31+00:00",
+  "actualizado": "2026-11-22T17:59:32+00:00",
   "ultimos_cambios": [
-    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: resultado retirado (1-2)",
-    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: acta modificada",
-    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: resultado confirmado en el calendario de la RFFM",
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: resultado retirado (5-0)",
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: acta modificada",
-    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: resultado confirmado en el calendario de la RFFM",
-    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: resultado 6-0",
-    "J7: CDE ARANJUEZ CFF - A.D. PIQUEÑAS: acta disponible"
+    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: resultado 1-2",
+    "J7: C.D. FUENLABRADA ATLANTIS 'A' - A.D. LA MECA DE RIVAS: acta disponible",
+    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: resultado 5-0",
+    "J7: C.D. NUEVO BOADILLA - C.D.A. NAVALCARNERO: acta disponible"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -526,11 +522,12 @@
       "hora": "15:15",
       "equipo_local": "C.D. FUENLABRADA ATLANTIS 'A'",
       "equipo_visitante": "A.D. LA MECA DE RIVAS",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 1,
+      "resultado_visitante": 2,
       "campo": "FUENLABRADA - IRENE FERRERAS (HA)(HA)",
-      "acta": null,
-      "cod_acta": "5700608"
+      "acta": "https://www.rffm.es/acta-partido/5700608?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700608",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 7,
@@ -590,11 +587,12 @@
       "hora": "13:00",
       "equipo_local": "C.D. NUEVO BOADILLA",
       "equipo_visitante": "C.D.A. NAVALCARNERO",
-      "resultado_local": null,
-      "resultado_visitante": null,
+      "resultado_local": 5,
+      "resultado_visitante": 0,
       "campo": "BOADILLA (CONDESA CHINCHON 2)(HA)",
-      "acta": null,
-      "cod_acta": "5700605"
+      "acta": "https://www.rffm.es/acta-partido/5700605?temporada=22&competicion=26748876&grupo=27505221",
+      "cod_acta": "5700605",
+      "resultado_fuente": "acta"
     },
     {
       "jornada": 7,
