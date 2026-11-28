@@ -1,10 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-25T13:22:00+00:00",
+  "actualizado": "2026-11-28T09:14:17+00:00",
   "ultimos_cambios": [
-    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: fecha 2026-12-13 → 2026-12-12",
-    "J9: C.F. POZUELO DE ALARCON - CDB UNION DEPORTIVA ARGANZUELA: hora 09:10 → 17:50"
+    "Clasificación actualizada"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -2197,26 +2196,26 @@
   ],
   "clasificacion": [
     {
+      "equipo": "C.D. GETAFE FEMENINO 'A'",
+      "puntos": 22,
+      "posicion": 1,
+      "pj": 8,
+      "pg": 7,
+      "pe": 1,
+      "pp": 0,
+      "gf": 70,
+      "gc": 2
+    },
+    {
       "equipo": "C.D. LEGANES S.A.D.",
       "puntos": 21,
-      "posicion": 1,
+      "posicion": 2,
       "pj": 7,
       "pg": 7,
       "pe": 0,
       "pp": 0,
       "gf": 62,
       "gc": 1
-    },
-    {
-      "equipo": "C.D. GETAFE FEMENINO 'A'",
-      "puntos": 19,
-      "posicion": 2,
-      "pj": 7,
-      "pg": 6,
-      "pe": 1,
-      "pp": 0,
-      "gf": 67,
-      "gc": 2
     },
     {
       "equipo": "A.D. ESCUELA DE FUTBOL DE CARABANCHEL",
@@ -2274,26 +2273,26 @@
       "gc": 10
     },
     {
-      "equipo": "A.D. LA MECA DE RIVAS",
+      "equipo": "C.F. POZUELO DE ALARCON",
       "puntos": 10,
       "posicion": 8,
       "pj": 7,
       "pg": 3,
       "pe": 1,
       "pp": 3,
-      "gf": 14,
-      "gc": 12
-    },
-    {
-      "equipo": "C.F. POZUELO DE ALARCON",
-      "puntos": 10,
-      "posicion": 9,
-      "pj": 7,
-      "pg": 3,
-      "pe": 1,
-      "pp": 3,
       "gf": 12,
       "gc": 13
+    },
+    {
+      "equipo": "A.D. LA MECA DE RIVAS",
+      "puntos": 10,
+      "posicion": 9,
+      "pj": 8,
+      "pg": 3,
+      "pe": 1,
+      "pp": 4,
+      "gf": 14,
+      "gc": 15
     },
     {
       "equipo": "CDE ARANJUEZ CFF",
