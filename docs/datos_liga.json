@@ -1,12 +1,14 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-28T14:56:19+00:00",
+  "actualizado": "2026-11-28T16:32:26+00:00",
   "ultimos_cambios": [
-    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': resultado 0-4",
-    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': acta disponible",
-    "J8: S.A.D. FUNDACION RAYO VALLECANO - C.F. POZUELO DE ALARCON: resultado 2-3",
-    "J8: S.A.D. FUNDACION RAYO VALLECANO - C.F. POZUELO DE ALARCON: acta disponible"
+    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': resultado retirado (0-4)",
+    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': acta modificada",
+    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': resultado confirmado en el calendario de la RFFM",
+    "J8: A.D. PIQUEÑAS - C.D. NUEVO BOADILLA: resultado retirado (0-6)",
+    "J8: A.D. PIQUEÑAS - C.D. NUEVO BOADILLA: acta modificada",
+    "J8: A.D. PIQUEÑAS - C.D. NUEVO BOADILLA: resultado confirmado en el calendario de la RFFM"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -606,12 +608,11 @@
       "hora": "09:15",
       "equipo_local": "A.D. LA MECA DE RIVAS",
       "equipo_visitante": "C.D. GETAFE FEMENINO 'A'",
-      "resultado_local": 0,
-      "resultado_visitante": 4,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "RIVAS - CERRO TELÉGRAFO (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5700615?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5700615",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5700615"
     },
     {
       "jornada": 8,
@@ -619,12 +620,11 @@
       "hora": "12:15",
       "equipo_local": "A.D. PIQUEÑAS",
       "equipo_visitante": "C.D. NUEVO BOADILLA",
-      "resultado_local": 0,
-      "resultado_visitante": 6,
+      "resultado_local": null,
+      "resultado_visitante": null,
       "campo": "PIQUEÑAS (HA)(HA)",
-      "acta": "https://www.rffm.es/acta-partido/5720101?temporada=22&competicion=26748876&grupo=27505221",
-      "cod_acta": "5720101",
-      "resultado_fuente": "acta"
+      "acta": null,
+      "cod_acta": "5720101"
     },
     {
       "jornada": 8,
