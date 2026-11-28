@@ -1,11 +1,9 @@
 {
   "temporada": "2026-2027",
   "categoria": "INFANTIL FEMENINO F11 GRUPO 2",
-  "actualizado": "2026-11-28T10:12:23+00:00",
+  "actualizado": "2026-11-28T11:10:13+00:00",
   "ultimos_cambios": [
-    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': resultado 0-4",
-    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': acta disponible",
-    "J8: A.D. LA MECA DE RIVAS - C.D. GETAFE FEMENINO 'A': acta cargada"
+    "Clasificación actualizada"
   ],
   "fuente": "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26748876&grupo=27505221&jornada=1",
   "origen_datos": "next_data",
@@ -2206,7 +2204,7 @@
       "pg": 7,
       "pe": 1,
       "pp": 0,
-      "gf": 70,
+      "gf": 71,
       "gc": 2
     },
     {
@@ -2295,7 +2293,7 @@
       "pe": 1,
       "pp": 4,
       "gf": 14,
-      "gc": 15
+      "gc": 16
     },
     {
       "equipo": "CDE ARANJUEZ CFF",
